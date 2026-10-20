@@ -41,6 +41,7 @@
 	<!-- / Yoast SEO plugin. -->
 
 
+<link rel="dns-prefetch" href="//hcaptcha.com">
 
 <link rel="alternate" type="text/calendar" title="The Gower Initiative for Modern Money Studies » iCal Feed" href="/events/?ical=1">
 
@@ -93,6 +94,28 @@ h1:where(.wp-block-heading).has-background,h2:where(.wp-block-heading).has-backg
 /*# sourceURL=global-styles-inline-css */
 </style>
 
+<link rel="stylesheet" id="ssb-front-css-css" href="/wp-content/plugins/simple-social-buttons/assets/css/front.min.css?ver=7.2.0" media="all">
+<link rel="stylesheet" id="ctf_styles-css" href="/wp-content/plugins/custom-twitter-feeds/css/ctf-styles.min.css?ver=2.10.0" media="all">
+<link rel="stylesheet" id="wpedon-css" href="/wp-content/plugins/easy-paypal-donation/assets/css/wpedon.css?ver=1.5.7" media="all">
+<link rel="stylesheet" id="spacexchimp_p005-bootstrap-tooltip-css-css" href="/wp-content/plugins/social-media-buttons-toolbar/inc/lib/bootstrap-tooltip/bootstrap-tooltip.css?ver=5.0" media="all">
+<link rel="stylesheet" id="spacexchimp_p005-frontend-css-css" href="/wp-content/plugins/social-media-buttons-toolbar/inc/css/frontend.css?ver=5.0" media="all">
+<style id="spacexchimp_p005-frontend-css-inline-css">
+
+                    .sxc-follow-buttons {
+                        text-align: left !important;
+                    }
+                    .sxc-follow-buttons .sxc-follow-button,
+                    .sxc-follow-buttons .sxc-follow-button a,
+                    .sxc-follow-buttons .sxc-follow-button a img {
+                        width: 32px !important;
+                        height: 32px !important;
+                    }
+                    .sxc-follow-buttons .sxc-follow-button {
+                        margin: 5px !important;
+                    }
+                  
+/*# sourceURL=spacexchimp_p005-frontend-css-inline-css */
+</style>
 <link rel="stylesheet" id="default-icon-styles-css" href="/wp-content/plugins/svg-vector-icon-plugin/public//admin/css/wordpress-svg-icon-plugin-style.min.css?ver=7.1.3" media="all">
 <link rel="stylesheet" id="vlp-public-css" href="/wp-content/plugins/visual-link-preview/dist/public.css?ver=2.4.2" media="all">
 <style id="nfd-wonder-blocks-utilities-inline-css">
@@ -105,14 +128,30 @@ h1:where(.wp-block-heading).has-background,h2:where(.wp-block-heading).has-backg
 <link rel="stylesheet" id="hitmag-font-awesome-css" href="/wp-content/themes/hitmag/css/all.min.css?ver=6.5.1" media="all">
 <link rel="stylesheet" id="hitmag-style-css" href="/wp-content/themes/hitmag/style.css?ver=1.4.5" media="all">
 <link rel="stylesheet" id="jquery-magnific-popup-css" href="/wp-content/themes/hitmag/css/magnific-popup.css?ver=7.1.3" media="all">
+<script id="jquery-core-js" src="/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
+<script id="jquery-migrate-js" src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"></script>
+<script id="spacexchimp_p005-bootstrap-tooltip-js-js" src="/wp-content/plugins/social-media-buttons-toolbar/inc/lib/bootstrap-tooltip/bootstrap-tooltip.js?ver=5.0"></script>
 <script id="nfd-wonder-blocks-utilities-js-after">
 (()=>{var c=class{constructor({clientId:a,...n}={}){this.options={activeClass:"nfd-wb-animated-in",root:null,rootMargin:"0px",threshold:0,...n}}observeElements(a,n=null,t=!1){if(!("IntersectionObserver"in window)||!a?.length||document.documentElement.classList.contains("block-editor-block-preview__content-iframe"))return;function o(s,r){this._mutationCallback(s,r,n)}let i=new IntersectionObserver(this._handleIntersection.bind(this),this.options),f=new MutationObserver(o.bind(this)),d=new MutationObserver(this._handleClassMutation.bind(this));a.forEach(s=>{let r=s;s.classList.contains("nfd-wb-reveal-right")&&(r=s.parentElement),i.observe(r),t&&(d.observe(r,{attributes:!0,attributeFilter:["class"]}),f.observe(r,{attributes:!0,attributeFilter:["class"]}))})}_handleIntersection(a,n){a.forEach(t=>{t.isIntersecting&&(t.target.classList.add(this.options.activeClass),t.target.querySelectorAll(".nfd-wb-animate").forEach(o=>{o.classList.add(this.options.activeClass)}),n.unobserve(t.target))})}_handleClassMutation(a){a.forEach(n=>{if(n?.type==="attributes"){let t=n.target;t.classList.contains("nfd-wb-animated-in")||t.classList.add("nfd-wb-animated-in")}})}_mutationCallback(a,n,t=null){a.forEach(o=>{if(o?.type==="attributes"){let i=o.target;t&&t===i.getAttribute("data-block")&&(i.getAttribute("data-replay-animation")===null&&(i.setAttribute("data-replay-animation",!0),requestAnimationFrame(()=>{i.removeAttribute("data-replay-animation")})),n.disconnect())}})}};var w={"nfd-wb-fade-in-bottom":{from:{opacity:0,transform:"translate3d(0, 90px, 0)"},duration:1200},"nfd-wb-fade-in-bottom-short":{from:{opacity:0,transform:"translate3d(0, 32px, 0)"},duration:600},"nfd-wb-fade-in-top-short":{from:{opacity:0,transform:"translate3d(0, -32px, 0)"},duration:600},"nfd-wb-fade-in-left-short":{from:{opacity:0,transform:"translate3d(-32px, 0, 0)"},duration:600},"nfd-wb-fade-in-right-short":{from:{opacity:0,transform:"translate3d(32px, 0, 0)"},duration:600},"nfd-wb-zoom-in":{from:{opacity:0,transform:"scale3d(0.4, 0.4, 0.4)"},duration:1200},"nfd-wb-zoom-in-short":{from:{opacity:0,transform:"scale3d(0.92, 0.92, 0.92)"},duration:600},"nfd-wb-twist-in":{from:{opacity:0,transform:"translateY(40px) scale(0.8) rotateY(30deg) rotateZ(-12deg)"},duration:1e3},"nfd-wb-reveal-right":{from:{clipPath:"inset(0 100% 0 0)"},to:{clipPath:"inset(0 0 0 0)"},duration:1500,easing:"cubic-bezier(0.4, 0, 0, 1)"}};["DOMContentLoaded","wonder-blocks/toolbar-button-added","wonder-blocks/block-order-changed"].forEach(e=>document.addEventListener(e,()=>l()));document.addEventListener("wonder-blocks/animation-changed",e=>l(e?.detail?.clientId));window.onload=()=>l();document.readyState!=="loading"&&l();var b=!1;function l(e=null){document.documentElement.classList.contains("block-editor-block-preview__content-iframe")||(window.parent!==window?h():y(e))}var m=e=>e.split(/\s+/).find(a=>a in w)||"";function u(e){e.style.transition="none",e.classList.add("nfd-wb-animated-in"),requestAnimationFrame(()=>{e.style.transition=""})}function p(e,a){let n=w[a];n&&e.animate([n.from,n.to||{opacity:1,transform:"none"}],{duration:n.duration,easing:n.easing||"cubic-bezier(0.4, 1, 0.65, 1)"})}function h(){if(document.body&&document.body.classList.add("nfd-wb-editor-animations"),requestAnimationFrame(()=>{document.querySelectorAll(".nfd-wb-animate:not(.nfd-wb-animated-in)").forEach(t=>t.classList.add("nfd-wb-animated-in"))}),b)return;b=!0;let e=t=>{t.querySelectorAll&&t.querySelectorAll(".nfd-wb-animate:not(.nfd-wb-animated-in)").forEach(u),t.classList?.contains("nfd-wb-animate")&&!t.classList.contains("nfd-wb-animated-in")&&u(t)},a=new MutationObserver(t=>{for(let o of t){if(o.type==="childList"){for(let s of o.addedNodes)s.nodeType===1&&e(s);continue}if(o.type!=="attributes"||o.attributeName!=="class")continue;let i=o.target;if(!i.classList.contains("nfd-wb-animate")||i.classList.contains("nfd-wb-animated-in")||i.hasAttribute("data-replay-animation"))continue;let f=m(o.oldValue||""),d=m([...i.classList].join(" "));f!==d&&d?(i.classList.add("nfd-wb-animated-in"),p(i,d)):u(i)}}),n=()=>{if(!document.body){requestAnimationFrame(n);return}document.body.classList.add("nfd-wb-editor-animations"),a.observe(document.body,{attributes:!0,attributeFilter:["class"],attributeOldValue:!0,childList:!0,subtree:!0})};n()}function y(e=null){let a=document.body?.classList.contains("block-editor-page")||!!e,n=a?document.querySelector(".interface-interface-skeleton__content"):null,t=new c({root:n,threshold:0});requestAnimationFrame(()=>{t.observeElements(Array.from(document.getElementsByClassName("nfd-wb-animate")),e,a)})}})();
 
 //# sourceURL=nfd-wonder-blocks-utilities-js-after
 </script>
-<script id="jquery-core-js" src="/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
-<script id="jquery-migrate-js" src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"></script>
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
+
+<!-- Open Graph Meta Tags generated by Simple Social Buttons 7.2.0 -->
+<meta property="og:title" content="Economic delusions cannot save us from the climate crisis and societal decay - The Gower Initiative for Modern Money Studies">
+<meta property="og:type" content="article">
+<meta property="og:description" content="&quot;Never forget that the economy is a wholly owned subsidiary of nature&quot;. Global Boiling - Kate Mackenzie and Tim Sahay  Many of us have grown up with the story of an arrogant ruler King Cnut, who placed his throne on the banks of the Thames, waiting for the tide…">
+<meta property="og:url" content="/2023/08/06/economic-delusions/">
+<meta property="og:site_name" content="The Gower Initiative for Modern Money Studies">
+<meta property="og:image" content="/wp-content/uploads/2023/08/Image-Paul-Walker-Flickr.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="&quot;Never forget that the economy is a wholly owned subsidiary of nature&quot;. Global Boiling - Kate Mackenzie and Tim Sahay  Many of us have grown up with the story of an arrogant ruler King Cnut, who placed his throne on the banks of the Thames, waiting for the tide…">
+<meta name="twitter:title" content="Economic delusions cannot save us from the climate crisis and societal decay - The Gower Initiative for Modern Money Studies">
+<meta property="twitter:image" content="/wp-content/uploads/2023/08/Image-Paul-Walker-Flickr.jpg">
+<style>
+.h-captcha{position:relative;display:block;margin-bottom:2rem;padding:0;clear:both}.h-captcha[data-size="normal"]{width:302px;height:76px}.h-captcha[data-size="compact"]{width:158px;height:138px}.h-captcha[data-size="invisible"]{display:none}.h-captcha iframe{z-index:1}.h-captcha::before{content:"";display:block;position:absolute;top:0;left:0;background:url(/wp-content/plugins/hcaptcha-for-forms-and-more/assets/images/hcaptcha-div-logo.svg) no-repeat;border:1px solid #fff0;border-radius:4px;box-sizing:border-box}.h-captcha::after{content:"If you see this message, hCaptcha failed to load due to site errors.";font-family:-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,"Helvetica Neue",Arial,sans-serif;font-size:10px;font-weight:500;position:absolute;top:0;bottom:0;left:0;right:0;box-sizing:border-box;color:#bf1722;opacity:0}.h-captcha.hcaptcha-api-delayed::after{content:"The hCaptcha loading is delayed until user interaction with the form.";color:#555}.h-captcha:not(:has(iframe))::after{animation:hcap-msg-fade-in .3s ease forwards;animation-delay:2s}.h-captcha.hcaptcha-api-delayed:not(:has(iframe))::after{animation-delay:0s}.h-captcha:has(iframe)::after{animation:none;opacity:0}@keyframes hcap-msg-fade-in{to{opacity:1}}.h-captcha[data-size="normal"]::before{width:302px;height:76px;background-position:93.8% 28%}.h-captcha[data-size="normal"]::after{width:302px;height:76px;display:flex;flex-wrap:wrap;align-content:center;line-height:normal;padding:0 75px 0 10px}.h-captcha[data-size="compact"]::before{width:158px;height:138px;background-position:49.9% 78.8%}.h-captcha[data-size="compact"]::after{width:158px;height:138px;text-align:center;line-height:normal;padding:24px 10px 10px 10px}.h-captcha[data-theme="light"]::before,body.is-light-theme .h-captcha[data-theme="auto"]::before,.h-captcha[data-theme="auto"]::before{background-color:#fafafa;border:1px solid #e0e0e0}.h-captcha[data-theme="dark"]::before,body.is-dark-theme .h-captcha[data-theme="auto"]::before,html.wp-dark-mode-active .h-captcha[data-theme="auto"]::before,html.drdt-dark-mode .h-captcha[data-theme="auto"]::before{background-image:url(/wp-content/plugins/hcaptcha-for-forms-and-more/assets/images/hcaptcha-div-logo-white.svg);background-repeat:no-repeat;background-color:#333;border:1px solid #f5f5f5}@media (prefers-color-scheme:dark){.h-captcha[data-theme="auto"]::before{background-image:url(/wp-content/plugins/hcaptcha-for-forms-and-more/assets/images/hcaptcha-div-logo-white.svg);background-repeat:no-repeat;background-color:#333;border:1px solid #f5f5f5}}.h-captcha[data-theme="custom"]::before{background-color:initial}.h-captcha[data-size="invisible"]::before,.h-captcha[data-size="invisible"]::after{display:none}.h-captcha iframe{position:relative}div[style*="z-index: 2147483647"] div[style*="border-width: 11px"][style*="position: absolute"][style*="pointer-events: none"]{border-style:none}p.hcaptcha-invisible-disclosure{padding:.5rem;margin-bottom:2rem!important}.h-captcha[data-theme="light"]+p.hcaptcha-invisible-disclosure,body.is-light-theme .h-captcha[data-theme="auto"]+p.hcaptcha-invisible-disclosure,.h-captcha[data-theme="auto"]+p.hcaptcha-invisible-disclosure{color:#333;background-color:#fafafa;border:1px solid #e0e0e0}.h-captcha[data-theme="dark"]+p.hcaptcha-invisible-disclosure,body.is-dark-theme .h-captcha[data-theme="auto"]+p.hcaptcha-invisible-disclosure,html.wp-dark-mode-active .h-captcha[data-theme="auto"]+p.hcaptcha-invisible-disclosure,html.drdt-dark-mode .h-captcha[data-theme="auto"]+p.hcaptcha-invisible-disclosure{color:#f5f5f5;background-color:#333;border:1px solid #f5f5f5}.h-captcha[data-theme="dark"]+p.hcaptcha-invisible-disclosure a,body.is-dark-theme .h-captcha[data-theme="auto"]+p.hcaptcha-invisible-disclosure a,html.wp-dark-mode-active .h-captcha[data-theme="auto"]+p.hcaptcha-invisible-disclosure a,html.drdt-dark-mode .h-captcha[data-theme="auto"]+p.hcaptcha-invisible-disclosure a{color:#f5f5f5}@media (prefers-color-scheme:dark){.h-captcha[data-theme="auto"]+p.hcaptcha-invisible-disclosure{color:#f5f5f5;background-color:#333;border:1px solid #f5f5f5}.h-captcha[data-theme="auto"]+p.hcaptcha-invisible-disclosure a{color:#f5f5f5}}.h-captcha[data-theme="custom"]+p.hcaptcha-invisible-disclosure,.h-captcha[data-theme="custom"]+p.hcaptcha-invisible-disclosure a{color:initial;background-color:initial}
+</style>
 <meta name="tec-api-version" content="v1"><meta name="tec-api-origin" content="/"><link rel="alternate" href="/wp-json/tribe/events/v1/">		<style type="text/css">
 			
 			button,
@@ -418,7 +457,7 @@ h1:where(.wp-block-heading).has-background,h2:where(.wp-block-heading).has-backg
 </li>
 <li id="menu-item-32" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-has-children menu-item-32"><a href="/">Basics</a>
 <ul class="sub-menu">
-	<li id="menu-item-194" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-194"><a href="/mmtbasics/">Introduction to MMT</a></li>
+	<li id="menu-item-194" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-194"><a href="/">Introduction to MMT</a></li>
 	<li id="menu-item-2375" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2375"><a href="/2020/10/24/modern-monetary-theory-mmt-white-paper-uk/">MMT White Paper for the UK</a></li>
 	<li id="menu-item-50" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-50"><a href="/faqs/">FAQs</a></li>
 </ul>
@@ -559,6 +598,149 @@ h1:where(.wp-block-heading).has-background,h2:where(.wp-block-heading).has-backg
 <p>The Gower Initiative for Money Studies is run by volunteers and relies on donations to continue its work. If you would like to donate, please see our donations page <a href="/donate/"><strong><em>here</em></strong></a></p>
 <p> </p>
 <p> </p>
+<div class="simplesocialbuttons simplesocial-simple-icons simplesocialbuttons_inline simplesocialbuttons-align-left post-3775 post  simplesocialbuttons-inline-no-animation">
+		<button class="ssb_fbshare-icon" rel="nofollow" target="_blank" data-ssb-network="fbshare" data-ssb-post-id="3775" aria-label="Facebook Share" data-href="https://www.facebook.com/sharer/sharer.php?u=%2F2023%2F08%2F06%2Feconomic-delusions%2F" data-ssb-share-action="popup">
+						<span class="icon"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" class="_1pbq" color="#ffffff"><path fill="#ffffff" fill-rule="evenodd" class="icon" d="M8 14H3.667C2.733 13.9 2 13.167 2 12.233V3.667A1.65 1.65 0 0 1 3.667 2h8.666A1.65 1.65 0 0 1 14 3.667v8.566c0 .934-.733 1.667-1.667
+						1.767H10v-3.967h1.3l.7-2.066h-2V6.933c0-.466.167-.9.867-.9H12v-1.8c.033 0-.933-.266-1.533-.266-1.267 0-2.434.7-2.467 2.133v1.867H6v2.066h2V14z">
+						</path></svg></span>
+						<span class="simplesocialtxt">Share </span> </button>
+<button class="ssb_tweet-icon" rel="nofollow" target="_blank" data-ssb-network="twitter" data-ssb-post-id="3775" aria-label="Twitter/X Share" data-href="https://twitter.com/intent/tweet?text=Economic%20delusions%20cannot%20save%20us%20from%20the%20climate%20crisis%20and%20societal%20decay&amp;url=%2F2023%2F08%2F06%2Feconomic-delusions%2F" data-ssb-share-action="popup"><span class="icon"><svg aria-hidden="true" focusable="false" viewbox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.9 0H0L5.782 7.7098L0.315 14H2.17L6.6416 8.8557L10.5 14H15.4L9.3744 5.9654L14.56
+						0H12.705L8.5148 4.8202L4.9 0ZM11.2 12.6L2.8 1.4H4.2L12.6 12.6H11.2Z" fill="#fff"></path></svg></span><i class="simplesocialtxt">Post </i></button>
+ <button class="ssb_whatsapp-icon simplesocial-whatsapp-share" rel="nofollow" target="_blank" data-ssb-network="whatsapp" data-ssb-post-id="3775" aria-label="WhatsApp Share" data-href="https://api.whatsapp.com/send?text=%2F2023%2F08%2F06%2Feconomic-delusions%2F" data-ssb-share-action="blank"><span class="icon"> <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="512px" height="512px" viewbox="0 0 90 90" style="enable-background:new 0 0 90 90;" xml:space="preserve" class=""><g><g> <path id="WhatsApp" d="M90,43.841c0,24.213-19.779,43.841-44.182,43.841c-7.747,0-15.025-1.98-21.357-5.455L0,90l7.975-23.522
+						 c-4.023-6.606-6.34-14.354-6.34-22.637C1.635,19.628,21.416,0,45.818,0C70.223,0,90,19.628,90,43.841z M45.818,6.982   c-20.484,0-37.146,
+						 16.535-37.146,36.859c0,8.065,2.629,15.534,7.076,21.61L11.107,79.14l14.275-4.537   c5.865,3.851,12.891,6.097,20.437,6.097c20.481,0,
+						 37.146-16.533,37.146-36.857S66.301,6.982,45.818,6.982z M68.129,53.938
+						 c-0.273-0.447-0.994-0.717-2.076-1.254c-1.084-0.537-6.41-3.138-7.4-3.495c-0.993-0.358-1.717-0.538-2.438,0.537
+						 c-0.721,1.076-2.797,3.495-3.43,4.212c-0.632,0.719-1.263,0.809-2.347,0.271c-1.082-0.537-4.571-1.673-8.708-5.333
+						c-3.219-2.848-5.393-6.364-6.025-7.441c-0.631-1.075-0.066-1.656,0.475-2.191c0.488-0.482,1.084-1.255,1.625-1.882
+						c0.543-0.628,0.723-1.075,1.082-1.793c0.363-0.717,0.182-1.344-0.09-1.883c-0.27-0.537-2.438-5.825-3.34-7.977
+						c-0.902-2.15-1.803-1.792-2.436-1.792c-0.631,0-1.354-0.09-2.076-0.09c-0.722,0-1.896,0.269-2.889,1.344
+						c-0.992,1.076-3.789,3.676-3.789,8.963c0,5.288,3.879,10.397,4.422,11.113c0.541,0.716,7.49,11.92,18.5,16.223
+						C58.2,65.771,58.2,64.336,60.186,64.156c1.984-0.179,6.406-2.599,7.312-5.107C68.398,56.537,68.398,54.386,68.129,53.938z"></path> </g></g> </svg> </span><span class="simplesocialtxt">WhatsApp</span></button>
+<button class="simplesocial-viber-share ssb_msng-icon" rel="nofollow" target="_blank" data-ssb-network="messenger" data-ssb-post-id="3775" aria-label="Facebook Messenger Share" data-href="http://www.facebook.com/dialog/send?app_id=891268654262273&amp;redirect_uri=%2F2023%2F08%2F06%2Feconomic-delusions%2F&amp;link=%2F2023%2F08%2F06%2Feconomic-delusions%2F&amp;display=popup" data-ssb-share-action="messenger"><span class="icon"> <svg aria-hidden="true" focusable="false" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="19px" viewbox="-889.5 1161 18 19" enable-background="new -889.5 1161 18 19" xml:space="preserve"><path opacity="0.99" fill="#FFFFFF" enable-background="new    " d="M-880.5,1161c-5,0-9,3.8-9,8.5c0,2.4,1,4.5,2.7,6v4.5l3.8-2.3 c0.8,0.2,1.6,0.3,2.5,0.3c5,0,9-3.8,9-8.5S-875.5,1161-880.5,1161z
+						 M-879.6,1172.2l-2.4-2.4l-4.3,2.4l4.7-5.2l2.4,2.4l4.2-2.4 L-879.6,1172.2z"></path></svg> </span><span class="simplesocialtxt">Messenger</span></button>
+<button class="ssb_linkedin-icon" rel="nofollow" target="_blank" data-ssb-network="linkedin" data-ssb-post-id="3775" aria-label="LinkedIn Share" data-href="https://www.linkedin.com/sharing/share-offsite/?url=%2F2023%2F08%2F06%2Feconomic-delusions%2F" data-ssb-share-action="popup"><span class="icon"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="15" height="14.1" viewbox="-301.4 387.5 15 14.1" xml:space="preserve"><g fill="#FFFFFF"><path d="M-296.2,401.6c0-3.2,0-6.3,0-9.5h0.1c1,0,2,0,2.9,0c0.1,0,0.1,0,0.1,0.1c0,0.4,0,0.8,0,1.2 c0.1-0.1,0.2-0.3,0.3-0.4c0.5-0.7,
+						1.2-1,2.1-1.1c0.8-0.1,1.5,0,2.2,0.3c0.7,0.4,1.2,0.8,1.5,1.4c0.4,0.8,0.6,1.7,0.6,2.5 c0,1.8,0,3.6,0,5.4v0.1c-1.1,0-2.1,0-3.2,0c0-0.1,
+						0-0.1,0-0.2c0-1.6,0-3.2,0-4.8c0-0.4,0-0.8-0.2-1.2c-0.2-0.7-0.8-1-1.6-1 c-0.8,0.1-1.3,0.5-1.6,1.2c-0.1,0.2-0.1,0.5-0.1,0.8c0,1.7,0,3.4,
+						0,5.1c0,0.2,0,0.2-0.2,0.2c-1,0-1.9,0-2.9,0 C-296.1,401.6-296.2,401.6-296.2,401.6z"></path><path d="M-298,401.6L-298,401.6c-1.1,0-2.1,0-3,0c-0.1,0-0.1,0-0.1-0.1c0-3.1,0-6.1,0-9.2 c0-0.1,0-0.1,0.1-0.1c1,0,2,0,2.9,
+						0h0.1C-298,395.3-298,398.5-298,401.6z"></path><path d="M-299.6,390.9c-0.7-0.1-1.2-0.3-1.6-0.8c-0.5-0.8-0.2-2.1,1-2.4c0.6-0.2,1.2-0.1,1.8,0.2 c0.5,0.4,0.7,0.9,0.6,1.5c-0.1,0.7-0.5,1.1-1.1,
+						1.3C-299.1,390.8-299.4,390.8-299.6,390.9L-299.6,390.9z"></path></g></svg></span><span class="simplesocialtxt">Share</span> </button>
+ <button class="ssb_email-icon simplesocial-email-share" aria-label="Share through Email" rel="nofollow" target="_blank" data-ssb-network="email" data-ssb-post-id="3775" data-href="mailto:?subject=Economic%20delusions%20cannot%20save%20us%20from%20the%20climate%20crisis%20and%20societal%20decay&amp;body=/2023/08/06/economic-delusions/" data-ssb-share-action="mailto"><span class="icon"> <svg aria-hidden="true" focusable="false" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="11.9px" viewbox="-1214.1 1563.9 16 11.9" enable-background="new -1214.1 1563.9 16 11.9" xml:space="preserve"><path d="M-1214.1,1565.2v1l8,4l8-4v-1c0-0.7-0.6-1.3-1.3-1.3h-13.4C-1213.5,1563.9-1214.1,1564.4-1214.1,
+						1565.2z M-1214.1,1567.4v7.1c0,0.7,0.6,1.3,1.3,1.3h13.4c0.7,0,1.3-0.6,1.3-1.3v-7.1l-8,4L-1214.1,1567.4z"></path> </svg> </span><span class="simplesocialtxt">Email</span></button>
+ <button class="ssb_reddit-icon" rel="nofollow" target="_blank" data-ssb-network="reddit" data-ssb-post-id="3775" aria-label="Reddit Share" data-href="https://reddit.com/submit?url=/2023/08/06/economic-delusions/&amp;title=Economic%20delusions%20cannot%20save%20us%20from%20the%20climate%20crisis%20and%20societal%20decay" data-ssb-share-action="popup"><span class="icon"> <svg aria-hidden="true" focusable="false" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="430.117px" height="430.117px" viewbox="0 0 430.117 430.117" style="enable-background:new 0 0 430.117 430.117;" xml:space="preserve"> <g> <path id="reddit" d="M307.523,231.062c1.11,2.838,1.614,5.769,1.614,8.681c0,5.862-2.025,11.556-5.423,16.204 c-3.36,4.593-8.121,8.158-13.722,
+						9.727h0.01c-0.047,0.019-0.094,0.019-0.117,0.037c-0.023,0-0.061,0.019-0.079,0.019 c-2.623,0.896-5.312,1.316-7.98,1.316c-6.254,
+						0-12.396-2.254-17.306-6.096c-4.872-3.826-8.56-9.324-9.717-15.845h-0.01 c0-0.019,0-0.042-0.009-0.069c0-0.019,
+						0-0.038-0.019-0.065h0.019c-0.364-1.681-0.551-3.36-0.551-5.021 c0-5.647,1.923-11.07,5.097-15.551c3.164-4.453,7.626-7.99,12.848-9.811c0.019,0,0.038-0.01,
+						0.038-0.01 c0.027,0,0.027-0.027,0.051-0.027c2.954-1.092,6.072-1.639,9.157-1.639c5.619,0,11.154,1.704,15.821,4.821 c4.611,3.066,8.354,7.561,10.23,
+						13.143c0.019,0.037,0.019,0.07,0.037,0.103c0,0.037,0.019,0.057,0.037,0.084H307.523z M290.329,300.349c-2.202-1.428-4.751-2.291-7.448-2.291c-2.175,0-4.434,
+						0.621-6.445,1.955l0,0 c-19.004,11.342-41.355,17.558-63.547,17.558c-16.65,
+						0-33.199-3.514-48.192-10.879l-0.077-0.037l-0.075-0.028
+						c-2.261-0.924-4.837-2.889-7.647-4.76c-1.428-0.925-2.919-1.844-4.574-2.521c-1.633-0.695-3.447-1.181-5.386-1.181 c-1.605,0-3.292,0.359-4.957,1.115c-0.086,
+						0.033-0.168,0.065-0.252,0.098h0.009c-2.616,0.999-4.66,2.829-5.974,4.994 c-1.372,2.23-2.046,4.826-2.046,7.411c0,2.334,0.551,4.667,1.691,6.786c1.085,2.007,
+						2.754,3.762,4.938,4.938 c21.429,14.454,46.662,21.002,71.992,20.979c22.838,0,45.814-5.287,66.27-14.911l0.107-0.065l0.103-0.056 c2.697-1.597,6.282-3.029,
+						9.661-5.115c1.671-1.064,3.304-2.296,4.704-3.897c1.4-1.591,2.525-3.551,3.16-5.875v-0.01 c0.266-1.026,0.392-2.025,
+						0.392-3.024c0-1.899-0.467-3.701-1.241-5.32C294.361,303.775,292.504,301.778,290.329,300.349z M139.875,265.589c0.037,0,0.086,0.014,0.128,0.037c2.735,0.999,
+						5.554,1.493,8.345,1.493c6.963,0,13.73-2.852,18.853-7.5 c5.115-4.662,8.618-11.257,8.618-18.775c0-0.196,0-0.392-0.009-0.625c0.019-0.336,0.028-0.705,
+						0.028-1.083 c0-7.458-3.456-14.08-8.522-18.762c-5.085-4.686-11.836-7.551-18.825-7.551c-1.867,0-3.769,0.219-5.628,0.653 c-0.028,0-0.049,0.009-0.077,0.009c0,
+						0-0.019,0-0.028,0c-9.252,1.937-17.373,8.803-20.37,18.248l0,0v0.01 c0,0.019-0.009,0.037-0.009,0.037c-0.861,2.586-1.262,5.255-1.262,7.896c0,5.787,1.913,
+						11.426,5.211,16.064 c3.269,4.56,7.894,8.145,13.448,9.819C139.816,265.561,139.835,265.571,139.875,265.589z M430.033,198.094v0.038 c0.066,0.94,0.084,1.878,
+						0.084,2.81c0,10.447-3.351,20.493-8.941,29.016c-5.218,7.976-12.414,14.649-20.703,19.177 c0.532,4.158,0.84,8.349,0.84,12.526c-0.01,22.495-7.766,44.607-21.272,
+						62.329v0.009h-0.028 c-24.969,33.216-63.313,52.804-102.031,62.684h-0.01l-0.027,0.023c-20.647,5.013-41.938,7.574-63.223,7.574 c-31.729,
+						0-63.433-5.722-93.018-17.585l-0.009-0.028h-0.028c-30.672-12.643-59.897-32.739-77.819-62.184 c-9.642-15.71-14.935-34.141-14.935-52.659c0-4.19,0.283-8.387,
+						0.843-12.536c-8.072-4.545-15.063-10.99-20.255-18.687 c-5.542-8.266-9.056-17.95-9.5-28.187v-0.04v-0.037v-0.082c0.009-14.337,6.237-27.918,
+						15.915-37.932 c9.677-10.011,22.896-16.554,37.075-16.554c0.196,0,0.392,0,0.588,0c1.487-0.101,2.987-0.159,4.488-0.159 c7.122,0,14.26,1.153,21.039,3.752l0.037,
+						0.028l0.038,0.012c5.787,2.437,11.537,5.377,16.662,9.449 c1.661-0.871,3.472-1.851,5.504-2.625c31.064-18.395,67.171-25.491,102.358-27.538c0.306-17.431,
+						2.448-35.68,10.949-51.65 c7.08-13.269,19.369-23.599,34-27.179l0.061-0.03l0.079-0.009c5.573-1.078,11.192-1.575,16.774-1.575 c14.869,0,29.561,3.521,43.31,
+						9.017c6.086-9.185,14.776-16.354,24.97-20.375l0.098-0.056l0.098-0.037 c5.983-1.864,12.303-2.954,18.646-2.954c6.692,0,13.437,1.223,19.756,4.046v-0.023c0.009,
+						0.023,0.019,0.023,0.019,0.023 c0.047,0.016,0.084,0.044,0.116,0.044c9.059,3.489,16.727,9.937,22.164,17.95c5.442,8.048,8.644,
+						17.688,8.644,27.599 c0,1.827-0.103,
+						3.657-0.317,5.489l-0.019,0.037c0,0.028,0,0.068-0.01,0.096c-1.063,12.809-7.551,24.047-16.736,32.063 c-9.24,8.048-21.207,12.909-33.49,12.909c-1.97,
+						0-3.958-0.11-5.937-0.374c-12.182-0.931-23.541-6.826-31.886-15.595 c-8.373-8.755-13.768-20.453-13.768-33.08c0-0.611,0.056-1.237,
+						0.074-1.843c-11.435-5.092-23.578-9.316-35.646-9.306 c-1.746,0-3.491,0.096-5.237,0.273h-0.019c-9.035,0.871-17.436,6.566-21.506,14.757v0.009v0.028 c-6.179,
+						12.034-7.411,26.101-7.598,40.064c34.639,2.259,69.483,10.571,100.043,28.138h0.047l0.438,0.259 c0.579,0.343,1.652,0.931,2.623,1.449c2.101-1.704,4.322-3.456,
+						6.856-4.966c9.264-6.17,20.241-9.238,31.223-9.238 c4.872,0,9.749,0.621,14.481,1.834h0.019l0.196,0.058c0.07,0.01,0.121,0.033,0.178,0.033v0.009 c11.183,2.845,
+						21.3,9.267,28.917,17.927c7.612,8.674,12.731,19.648,13.73,31.561v0.025H430.033z M328.002,84.733 c0,0.469,0.01,0.95,0.057,1.44v0.028v0.056c0.224,6.018,3.065,
+						11.619,7.383,15.756c4.34,4.14,10.1,6.702,15.942,6.725h0.08h0.079 c0.42,0.033,0.85,0.033,1.26,0.033c5.899,0.009,11.752-2.532,16.148-6.655c4.405-4.144,
+						7.309-9.78,7.542-15.849l0.009-0.028v-0.037 c0.038-0.464,0.057-0.903,
+						0.057-1.377c0-6.247-2.922-12.202-7.496-16.612c-4.555-4.406-10.688-7.136-16.735-7.12 c-1.951,
+						0-3.884,0.266-5.778,0.854l-0.065,0.005l-0.056,0.023c-4.984,1.295-9.656,4.368-13.012,8.449 C330.046,74.486,328.002,79.508,328.002,84.733z M72.312,
+						177.578c-4.63-2.156-9.418-3.696-14.15-3.676 c-0.794,0-1.597,0.047-2.39,0.133h-0.11l-0.11,0.014c-6.795,0.187-13.653,3.15-18.801,7.899 c-5.152,4.732-8.559,
+						11.122-8.821,18.167v0.065l-0.012,0.058c-0.046,0.57-0.065,1.137-0.065,1.683 c0,4.345,1.333,8.545,3.593,12.368c1.673,2.847,3.867,5.441,6.348,7.701C45.735,
+						204.602,58.142,189.845,72.312,177.578z M374.066,262.635c0-15.5-5.592-31.069-14.646-43.604c-18.053-25.119-46.055-41.502-75.187-50.636l-0.205-0.072
+						c-5.592-1.715-11.238-3.234-16.933-4.534c-17.025-3.876-34.48-5.806-51.917-5.806c-23.414,0-46.827,3.465-69.245,10.379 c-29.125,9.243-57.221,25.51-75.233,
+						50.71v0.019c-9.129,12.587-14.475,28.208-14.475,43.763c0,5.727,0.716,11.453,2.23,17.025 l0.019,0.01c3.278,12.508,9.689,23.671,17.989,33.393c8.295,9.745,
+						18.472,18.058,29.176,24.839c2.371,1.47,4.751,2.87,7.187,4.237 c31.094,17.356,66.898,24.964,102.445,24.964c6.012,0,12.06-0.214,18.033-0.644c35.797-2.959,
+						71.742-13.525,100.8-35.115 l0.01-0.023c9.25-6.837,17.818-15.112,24.595-24.525c6.805-9.418,11.789-19.947,14.002-31.382V275.6l0.009-0.01 C373.627,271.32,
+						374.066,266.985,374.066,262.635z M402.32,200.95c-0.009-3.762-0.868-7.507-2.753-11l-0.047-0.044l-0.019-0.056
+						c-2.521-5.19-6.479-9.11-11.248-11.782c-4.77-2.69-10.352-4.056-15.952-4.056c-5.063,0-10.1,1.132-14.57,3.379 c14.216,12.344,26.687,27.179,34.746,
+						44.636c2.595-2.259,4.808-5.018,6.464-8.084C401.098,209.92,402.32,205.405,402.32,200.95z"></path></g></svg></span><span class="simplesocialtxt">Reddit </span></button>
+ <button class="ssb_pinterest-icon" rel="nofollow" target="_blank" data-ssb-network="pinterest" data-ssb-post-id="3775" aria-label="Pinterest Share" data-href="https://www.pinterest.com/pin/create/button/?url=%2F2023%2F08%2F06%2Feconomic-delusions%2F&amp;description=We%20can%20only%20deal%20with%20ecological%20overshoot%20and%20climate%20change%20by%20rejecting%20an%20economic%20system%20built%20on%20growth%20and%20endless%20consumption." data-ssb-share-action="pinterest-pin"><span class="icon"> <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" viewbox="-1 -1 31 31"><g><path d="M29.449,14.662 C29.449,22.722 22.868,29.256 14.75,29.256 C6.632,29.256 0.051,22.722 0.051,14.662 C0.051,6.601 6.632,0.067 14.75,
+						0.067 C22.868,0.067 29.449,6.601 29.449,14.662" fill="#fff" stroke="#fff" stroke-width="1"></path><path d="M14.733,1.686 C7.516,1.686 1.665,7.495 1.665,14.662 C1.665,20.159 5.109,24.854 9.97,26.744 C9.856,25.718 9.753,24.143 10.016,
+						23.022 C10.253,22.01 11.548,16.572 11.548,16.572 C11.548,16.572 11.157,15.795 11.157,14.646 C11.157,12.842 12.211,11.495 13.522,11.495 C14.637,
+						11.495 15.175,12.326 15.175,13.323 C15.175,14.436 14.462,16.1 14.093,17.643 C13.785,18.935 14.745,19.988 16.028,19.988 C18.351,19.988 20.136,
+						17.556 20.136,14.046 C20.136,10.939 17.888,8.767 14.678,8.767 C10.959,8.767 8.777,11.536 8.777,14.398 C8.777,15.513 9.21,16.709 9.749,17.359 C9.856,
+						17.488 9.872,17.6 9.84,17.731 C9.741,18.141 9.52,19.023 9.477,19.203 C9.42,19.44 9.288,19.491 9.04,19.376 C7.408,18.622 6.387,16.252 6.387,14.349 C6.387,
+						10.256 9.383,6.497 15.022,6.497 C19.555,6.497 23.078,9.705 23.078,13.991 C23.078,18.463 20.239,22.062 16.297,22.062 C14.973,22.062 13.728,21.379 13.302,
+						20.572 C13.302,20.572 12.647,23.05 12.488,23.657 C12.193,24.784 11.396,26.196 10.863,27.058 C12.086,27.434 13.386,27.637 14.733,27.637 C21.95,27.637 27.801,
+						21.828 27.801,14.662 C27.801,7.495 21.95,1.686 14.733,1.686" fill="#bd081c"></path></g></svg> </span><span class="simplesocialtxt">Pinterest</span> </button>
+<button class="ssb_tumblr-icon" rel="nofollow" target="_blank" data-ssb-network="tumblr" data-ssb-post-id="3775" aria-label="Tumblr Share" data-href="http://tumblr.com/widgets/share/tool?canonicalUrl=%2F2023%2F08%2F06%2Feconomic-delusions%2F" data-ssb-share-action="popup"><span class="icon"> <svg aria-hidden="true" focusable="false" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.6px" height="17.8px" viewbox="-299.1 388.3 12.6 17.8" style="enable-background:new -299.1 388.3 12.6 17.8;" xml:space="preserve"><g> <path fill="#FFFFFF" d="M-294.7,388.3c1.1,0,2.1,0,3.2,0c0,1.5,0,2.9,0,4.4c1.7,0,3.3,0,5,0c0,1.1,0,2.2,0,3.4c-1.7,0-3.3,0-5,0 c0,0.1,
+						0,0.2,0,0.2c0,1.6,0,3.2,0,4.8c0,1.2,0.6,1.8,1.8,2c1.1,0.1,2.1,0,3-0.5c0.1,0,0.1-0.1,0.2-0.1c0,0.1,0,0.1,0,0.2 c0,0.8,0,1.5,0,2.3c0,0.1,0,0.2-0.2,
+						0.3c-1.6,0.6-3.2,0.9-5,0.8c-1-0.1-2-0.3-2.9-0.8c-1.2-0.7-1.8-1.7-1.8-3.1c0-2.1,0-4.1,0-6.2 c0-0.1,0-0.2,0-0.3c-0.9,0-1.8,0-2.7,0c0-0.1,0-0.1,
+						0-0.2c0-0.7,0-1.5,0-2.2c0-0.1,0-0.2,0.2-0.2c0.3-0.1,0.7-0.2,1-0.3 c1.6-0.6,2.6-1.8,3-3.5c0-0.1,0.1-0.3,0.1-0.4C-294.8,388.6-294.7,388.4-294.7,
+						388.3z"></path> </g> </svg> </span><span class="simplesocialtxt">Tumblr </span></button>
+<button class="simplesocial-viber-share ssb_viber-icon" rel="nofollow" target="_blank" data-ssb-network="viber" data-ssb-post-id="3775" aria-label="Viber Share" data-href="viber://forward?text=%2F2023%2F08%2F06%2Feconomic-delusions%2F" data-ssb-share-action="self"><span class="icon"> <svg aria-labelledby="simpleicons-viber-icon" role="img" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title id="simpleicons-viber-icon">Viber icon</title><path d="M20.812 2.343c-.596-.549-3.006-2.3-8.376-2.325 0 0-6.331-.38-9.415 2.451C1.302 4.189.698 6.698.634 9.82.569 12.934.487 18.774 6.12
+						 20.36h.005l-.005 2.416s-.034.979.609 1.178c.779.24 1.236-.504 1.98-1.303.409-.439.972-1.088 1.397-1.582 3.851.322 6.813-.416 7.149-.525.777-.254
+						  5.176-.816 5.893-6.658.738-6.021-.357-9.83-2.338-11.547v.004zm.652 11.112c-.615 4.876-4.184 5.187-4.83 5.396-.285.092-2.895.738-6.164.525 0 0-2.445
+						   2.941-3.195 3.705-.121.121-.271.166-.361.145-.135-.029-.164-.18-.164-.404l.015-4.006c-.015 0 0 0 0
+						    0-4.771-1.336-4.485-6.301-4.425-8.91.044-2.596.538-4.726 1.994-6.167 2.611-2.371 7.997-2.012 7.997-2.012 4.543.016 6.721 1.385 7.223 1.846 1.674 1.432
+							 2.529 4.865 1.904 9.893l.006-.011zM7.741 4.983c.242 0 .459.109.629.311.004.002.58.695.83 1.034.235.32.551.83.711 1.115.285.51.104 1.032-.172
+							  1.248l-.566.45c-.285.229-.25.653-.25.653s.84 3.157 3.959 3.953c0 0 .426.039.654-.246l.451-.569c.213-.285.734-.465 1.244-.181.285.15.795.466
+							   1.116.704.339.24 1.032.826 1.036.826.33.271.404.689.18 1.109v.016c-.23.405-.541.78-.934 1.141h-.008c-.314.27-.629.42-.944.449-.03 0-.075.016-.136
+							    0-.135 0-.27-.029-.404-.061v-.014c-.48-.135-1.275-.48-2.596-1.216-.855-.479-1.574-.96-2.189-1.455-.315-.255-.645-.54-.976-.87l-.076-.028-.03-.03
+								-.029-.029c-.331-.33-.615-.66-.871-.98-.48-.609-.96-1.327-1.439-2.189-.735-1.32-1.08-2.115-1.215-2.596H5.7c-.045-.134-.075-.269-.06-.404-.015-.061
+								 0-.105 0-.141.03-.299.189-.614.458-.944h.005c.355-.39.738-.704 1.146-.933.164-.091.329-.135.479-.135h.016l-.003.012zm4.095-.683h.116l.076.002h.02l
+								 .089.005h.511l.135.015h.074l.15.016h.03l.104.015h.016l.074.015c.046 0 .076.016.105.016h.091l.075.029.06.016.06.015.03.015h.045l.046.016h.029l.074.
+								 016.045.014.046.016.06.016.03.014c.03 0 .06.016.091.016l.044.015.046.016.119.044.061.031.135.06.045.015.045.016.09.045.061.015.029.015.076.031.029
+								 .014.061.031.045.014.045.03.059.03.046.029.03.016.061.03.044.03.075.045.045.016.074.044.016.015.045.031.09.074.046.03.044.03.031.014.045.031.074.
+								 074.061.045.045.03.016.015.029.016.074.061.046.044.03.03.045.029.045.031.029.015.12.12.06.061.135.135.031.029c.016.016.045.045.061.075l.029.03.166
+								 .194.045.06c.014.016.014.031.029.031l.09.135.045.045.09.12.076.12.045.09.059.105.045.09.016.029.029.061.076.15.074.149.031.075c.059.135.104.27.164
+								 .42.074.195.135.404.18.63.045.165.076.315.105.48l.029.27.045.3c.016.121.031.256.031.375.014.121.014.24.014.359v.256c0 .016-.006.029-.014.045-.016.
+								 03-.031.045-.061.075-.021.015-.049.046-.08.046-.029.014-.059.014-.09.014h-.045c-.029 0-.059-.014-.09-.029-.029-.016-.061-.03-.074-.061-.016-.029-
+								 .045-.061-.061-.09s-.031-.06-.031-.09v-.359c-.014-.209-.029-.425-.059-.639-.016-.146-.045-.284-.061-.42 0-.074-.016-.146-.029-.209l-.029-.15-.038
+								 -.141-.016-.09-.045-.15c-.029-.12-.074-.24-.119-.36-.029-.091-.061-.165-.105-.239l-.029-.076-.135-.27-.031-.045c-.061-.135-.135-.27-.225-.391l-.0
+								 45-.074h-.201l-.064-.091c-.055-.089-.114-.165-.18-.239l-.125-.15-.015-.016-.046-.057-.035-.045-.075-.074-.015-.03-.07-.06-.045-.046-.083-.075-.04-
+								 .037-.046-.045-.015-.016c-.016-.015-.045-.045-.075-.06l-.076-.062-.03-.015-.061-.046-.074-.06-.045-.036-.03-.016-.06-.053c0-.016-.016-.016-.031-.0
+								 16l-.029-.029-.015-.016v-.013l-.03-.014-.061-.037-.044-.031-.075-.045-.06-.045-.029-.016-.032-.013h-.09l-.019-.016-.065-.035-.009-.014-.03-.016-.0
+								 45-.021h-.012l-.045-.016-.025-.015-.045-.015-.01-.011-.03-.016-.053-.029-.03-.015-.09-.03-.074-.029-.137-.016-.044-.029c-.015-.01-.03-.016-.046-.0
+								 16l-.029-.015c-.029-.011-.045-.016-.075-.03l-.03-.016h-.029l-.061-.029-.029-.016-.045-.015h-.092c-.008 0-.019-.005-.03-.007h-.09l-.045-.016h-.015l
+								 -.045-.016h-.041c-.025-.014-.045-.014-.07-.014l-.01-.016-.06-.015c-.03-.016-.056-.016-.084-.016l-.045-.015-.05-.016-.045-.014-.061-.016h-.061l-.17
+								 9-.022h-.09l-.116-.015h-.076l-.068-.008h-.03l-.054-.016h-.285l-.01-.015h-.061c-.03 0-.064-.015-.09-.03-.03-.016-.061-.029-.081-.06l-.03-.046c-.029
+								 -.029-.029-.06-.045-.09-.014-.028-.014-.059-.014-.089s0-.06.015-.09c.016-.029.029-.06.061-.075.015-.03.044-.044.074-.06.029-.016.061-.03.09-.03h.
+								 061l.015.066zm.554 1.574l.037.003.061.006c.008 0 .018 0 .029.003.022 0 .045.004.075.006l.06.008.024.016.045.015.048.015.045.016h.03l.042.015.07.01
+								 5.056.016.026.014h.073l.119.028.046.015.045.015.045.016s.015 0 .015.015l.046.015.044.016.045.016c.015 0 .03.014.046.014.007 0 .014.016.025.016l.0
+								 64.03h.029l.09.03.05.029.046.03.108.045.06.015.031.031c.045.014.09.044.135.059l.048.03.048.03.049.029c.045.03.082.046.121.076l.029.014.041.031.02
+								 2.015.075.045.037.03.065.043.029.015.03.015.046.03.06.046c.015.014.022.014.034.029.01.015.016.015.025.03l.033.03.036.029.03.03.046.046.029.03.016
+								 .016.09.089.016.016c0 .015.015.03.029.03l.016.013.045.046.029.045.03.03.045.06.046.046.09.119.014.029.061.076.016.029.015.031.015.029.016.03c.016
+								 .015.016.03.029.06l.043.076.016.015.029.061.031.044c.014.015.014.029.029.045l.03.045.03.061.029.059.016.046c.015.044.045.075.06.12 0 .015.015.029
+								 .015.045l.045.119.061.195c0 .016.015.045.015.061l.046.135.044.18.046.24c.014.074.014.135.029.211.016.119.03.238.03.359l.015.21v.165c0 .016 0 .029
+								 -.015.045l-.044.043c-.029.023-.045.045-.074.061-.03.015-.061.029-.09.04-.031.016-.075.016-.105.016-.029 0-.061-.016-.09-.03-.016 0-.03-.016-.045
+								 -.021-.031-.014-.061-.039-.075-.065-.03-.03-.046-.06-.046-.091l-.014-.044v-.313c0-.133-.016-.256-.031-.385-.015-.135-.044-.285-.074-.42-.029-.09
+								 -.045-.18-.075-.26l-.03-.091-.029-.075-.016-.03-.045-.12-.045-.09-.075-.149-.069-.12v-.019l-.029-.047-.03-.038-.045-.075-.046-.061-.089-.119c-.0
+								 46-.061-.09-.12-.142-.178-.014-.015-.029-.029-.029-.045l-.03-.029-.017-.016-.03-.014-.03-.027v-.146l-.119-.113-.075-.068v-.014l-.03-.031-.038-.0
+								 29-.015-.016c0-.015-.016-.015-.029-.015l-.046-.016-.015-.015-.061-.045-.014-.016-.016-.015c-.012-.015-.023-.015-.03-.015l-.06-.045-.016-.016-.06
+								 -.029-.011-.016-.045-.029-.03-.016-.03-.029-.029-.031h-.016c-.029-.029-.06-.044-.105-.06l-.044-.03-.03-.014-.016-.016-.045-.03-.044-.015-.06-.03
+								 -.046-.015-.015-.016-.056-.014v-.012l-.091-.03-.06-.03-.03-.015h-.06c-.03-.015-.045-.015-.075-.03H13.2l-.045-.016h-.044l-.046-.014-.029-.016h-.0
+								 61l-.061-.015-.029-.016h-.165l-.069-.015H12.3l-.046-.016c-.029-.014-.06-.029-.09-.06-.014-.03-.045-.06-.06-.089-.015-.031-.03-.061-.03-.091v-.09
+								 c.006-.046.016-.075.03-.105.008-.015.015-.03.03-.045.018-.03.045-.06.075-.075.015-.015.03-.015.044-.029.031-.016.061-.016.091-.016h.06l-.014.055
+								 zm.454 1.629c.015 0 .03 0 .044.004.016 0 .031 0 .046.002l.052.005c.104.009.213.024.318.046l.104.023.026.008.114.029.059.02.046.016c.045.014.091.
+								 045.135.06l.016.015.06.03.09.046.029.014c.016.016.031.016.046.03.015.016.045.03.06.045.061.03.105.075.15.105l.105.09.09.091.061.074.029.029.03.0
+								 31.044.06.091.135.075.135.06.12.046.105c.044.104.06.195.09.299.029.091.045.196.06.285l.015.15.016.136V9.8c0 .045-.016.075-.03.105-.015.029-.046.
+								 074-.075.09-.03.029-.061.045-.105.061-.029.014-.06.014-.09.014-.029 0-.06 0-.09-.014l-.104-.046c-.03-.03-.06-.045-.091-.091-.015-.029-.029-.06-.
+								 045-.104v-.166l-.015-.105-.015-.119-.016-.105-.016-.06c0-.015-.014-.045-.014-.06-.03-.121-.09-.24-.15-.36l-.061-.06-.047-.06-.045-.045-.015-.03-
+								 .075-.06-.061-.061-.059-.045c-.016-.015-.03-.015-.061-.029l-.09-.061-.061-.03-.029-.015h-.016l-.076-.031-.09-.03-.09-.015h-.075l-.044-.015-.035-
+								 .007h-.045l-.06-.016h-.255l-.015-.075h-.039c-.03-.004-.055-.015-.08-.029-.035-.021-.064-.045-.09-.08-.018-.029-.034-.061-.045-.09-.008-.029-.012
+								 -.06-.012-.09 0-.037 0-.075.015-.113.015-.039.03-.07.06-.1l.061-.045c.029-.016.061-.03.09-.03l.062-.075h.032z"></path></svg> </span><span class="simplesocialtxt">Viber</span></button>
+</div>
 	</div><!-- .entry-content -->
 
 	
@@ -623,8 +805,15 @@ h1:where(.wp-block-heading).has-background,h2:where(.wp-block-heading).has-backg
 		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2023/08/06/economic-delusions/#respond" style="display:none;">Cancel reply</a></small></h3><form action="https://gimms.org.uk/wp-comments-post.php" method="post" id="commentform" class="comment-form"><p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> <span class="required-field-message">Required fields are marked <span class="required">*</span></span></p><p class="comment-form-comment"><label for="comment">Comment <span class="required">*</span></label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" autocomplete="name" required></p>
 <p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" autocomplete="email" required></p>
 <p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="url" value="" size="30" maxlength="200" autocomplete="url"></p>
-<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment"> <input type="hidden" name="comment_post_ID" value="3775" id="comment_post_ID">
+		<input type="hidden" class="hcaptcha-widget-id" name="hcaptcha-widget-id" value="eyJzb3VyY2UiOlsiV29yZFByZXNzIl0sImZvcm1faWQiOjM3NzV9-10ee2ad6d77804592aa51d3a47bbe29b">
+				<input type="hidden" class="hcaptcha-signature" name="hcaptcha-signature-SENhcHRjaGFcV1BcQ29tbWVudA==" value="eyJzb3VyY2UiOlsiV29yZFByZXNzIl0sImZvcm1faWQiOjM3NzUsImhjYXB0Y2hhX3Nob3duIjp0cnVlfQ==-72460f8b092694631ea421616b0a89c8">
+				<h-captcha class="h-captcha" data-sitekey="10000000-ffff-ffff-ffff-000000000001" data-theme="light" data-size="normal" data-auto="false" data-ajax="false" data-force="false">
+		</h-captcha>
+		<input type="hidden" id="hcaptcha_comment_nonce" name="hcaptcha_comment_nonce" value="a90ea3f62e"><input type="hidden" name="_wp_http_referer" value="/2023/08/06/economic-delusions/"><p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment"> <input type="hidden" name="comment_post_ID" value="3775" id="comment_post_ID">
 <input type="hidden" name="comment_parent" id="comment_parent" value="0">
+</p><p style="display: none !important;" class="akismet-fields-container" data-prefix="ak_"><label>Δ<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="ak_js" value="79"><script>
+document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );
+</script>
 </p></form>	</div><!-- #respond -->
 	
 </div><!-- #comments -->
@@ -636,7 +825,34 @@ h1:where(.wp-block-heading).has-background,h2:where(.wp-block-heading).has-backg
 <aside id="secondary" class="widget-area" role="complementary">
 
 	
-	<section id="text-3" class="widget widget_text">			<div class="textwidget"><p>[smbtoolbar]</p>
+	<section id="text-3" class="widget widget_text">			<div class="textwidget">Follow us<ul class="sxc-follow-buttons"><li class="sxc-follow-button">
+                        <a href="https://www.facebook.com/GowerInitiative/" data-toggle="tooltip" title="Facebook" target="_blank">
+                            <img decoding="async" src="/wp-content/plugins/social-media-buttons-toolbar/inc/img/social-media-icons/facebook.png" alt="Facebook">
+                        </a>
+                    </li><li class="sxc-follow-button">
+                        <a href="https://twitter.com/GowerInitiative" data-toggle="tooltip" title="Twitter" target="_blank">
+                            <img decoding="async" src="/wp-content/plugins/social-media-buttons-toolbar/inc/img/social-media-icons/twitter.png" alt="Twitter">
+                        </a>
+                    </li><li class="sxc-follow-button">
+                        <a href="https://www.instagram.com/gowerinitiative/" data-toggle="tooltip" title="Instagram" target="_blank">
+                            <img decoding="async" src="/wp-content/plugins/social-media-buttons-toolbar/inc/img/social-media-icons/instagram.png" alt="Instagram">
+                        </a>
+                    </li><li class="sxc-follow-button">
+                        <a href="https://www.youtube.com/channel/UCDzqxjzx-megEvRa_bvqe0Q/playlists" data-toggle="tooltip" title="YouTube" target="_blank">
+                            <img decoding="async" src="/wp-content/plugins/social-media-buttons-toolbar/inc/img/social-media-icons/youtube.png" alt="YouTube">
+                        </a>
+                    </li><li class="sxc-follow-button">
+                        <a href="https://www.linkedin.com/company/gowerinitiative" data-toggle="tooltip" title="LinkedIn" target="_blank">
+                            <img decoding="async" src="/wp-content/plugins/social-media-buttons-toolbar/inc/img/social-media-icons/linkedin.png" alt="LinkedIn">
+                        </a>
+                    </li></ul><script type='text/javascript'>
+                    jQuery(document).ready(function($) {
+
+                        // Enable Bootstrap Tooltips
+                        $('[data-toggle="tooltip"]').tooltip();
+
+                    });
+               </script>
 </div>
 		</section><section id="text-4" class="widget widget_text"><h4 class="widget-title">Join our mailing list</h4>			<div class="textwidget"><p>If you would like GIMMS to let you know about news and events, please click to sign up <a href="/contact/mailing-list/"><strong><em>here</em></strong></a></p>
 </div>
@@ -647,12 +863,12 @@ h1:where(.wp-block-heading).has-background,h2:where(.wp-block-heading).has-backg
 				</label>
 				<input type="submit" class="search-submit" value="Search">
 			</form></section><div class="tribe-compatibility-container">
-	<div class="tribe-common tribe-events tribe-events-view tribe-events-view--widget-events-list tribe-events-widget" data-js="tribe-events-view" data-view-rest-url="/wp-json/tribe/views/v2/html" data-view-manage-url="1" data-view-breakpoint-pointer="674159de-e8fd-4168-8c3d-24a03d2d96df">
+	<div class="tribe-common tribe-events tribe-events-view tribe-events-view--widget-events-list tribe-events-widget" data-js="tribe-events-view" data-view-rest-url="/wp-json/tribe/views/v2/html" data-view-manage-url="1" data-view-breakpoint-pointer="1346cbe9-0144-40e9-9caa-9361c2903db4">
 		<div class="tribe-events-widget-events-list">
 
 			
 			<script data-js="tribe-events-view-data" type="application/json">
-	{"slug":"widget-events-list","prev_url":"","next_url":"","view_class":"Tribe\\Events\\Views\\V2\\Views\\Widgets\\Widget_List_View","view_slug":"widget-events-list","view_label":"View","view":null,"should_manage_url":true,"id":null,"alias-slugs":null,"title":"Economic delusions cannot save us from the climate crisis and societal decay - The Gower Initiative for Modern Money Studies","limit":"5","no_upcoming_events":false,"featured_events_only":false,"jsonld_enable":true,"tribe_is_list_widget":false,"admin_fields":{"title":{"label":"Title:","type":"text","parent_classes":"","classes":"","dependency":"","id":"widget-tribe-widget-events-list-3-title","name":"widget-tribe-widget-events-list[3][title]","options":[],"placeholder":"","value":null},"limit":{"label":"Show:","type":"number","default":5,"min":1,"max":10,"step":1,"parent_classes":"","classes":"","dependency":"","id":"widget-tribe-widget-events-list-3-limit","name":"widget-tribe-widget-events-list[3][limit]","options":[],"placeholder":"","value":null},"no_upcoming_events":{"label":"Hide this widget if there are no upcoming events.","type":"checkbox","parent_classes":"","classes":"","dependency":"","id":"widget-tribe-widget-events-list-3-no_upcoming_events","name":"widget-tribe-widget-events-list[3][no_upcoming_events]","options":[],"placeholder":"","value":null},"featured_events_only":{"label":"Limit to featured events only","type":"checkbox","parent_classes":"","classes":"","dependency":"","id":"widget-tribe-widget-events-list-3-featured_events_only","name":"widget-tribe-widget-events-list[3][featured_events_only]","options":[],"placeholder":"","value":null},"jsonld_enable":{"label":"Generate JSON-LD data","type":"checkbox","parent_classes":"","classes":"","dependency":"","id":"widget-tribe-widget-events-list-3-jsonld_enable","name":"widget-tribe-widget-events-list[3][jsonld_enable]","options":[],"placeholder":"","value":null}},"events":[],"url":"\/?post_type=tribe_events&eventDisplay=widget-events-list","url_event_date":false,"bar":{"keyword":"","date":""},"today":"2026-10-20 00:00:00","now":"2026-10-20 16:35:07","home_url":"","rest_url":"\/wp-json\/tribe\/views\/v2\/html","rest_method":"GET","rest_nonce":"","today_url":"\/?post_type=tribe_events&eventDisplay=widget-events-list&year=2023&monthnum=08&day=06&name=economic-delusions","today_title":"Click to select today's date","today_label":"Today","prev_label":"","next_label":"","date_formats":{"compact":"Y-m-d","month_and_year_compact":"Y-m","month_and_year":"F Y","time_range_separator":" - ","date_time_separator":" @ "},"messages":{"notice":["There are no upcoming events."]},"start_of_week":"1","header_title":"","header_title_element":"h1","content_title":"","show_content_title":false,"breadcrumbs":[],"backlink":false,"before_events":"","after_events":"\n<!--\nThis calendar is powered by The Events Calendar.\nhttp:\/\/evnt.is\/18wn\n-->\n","display_events_bar":false,"disable_event_search":false,"live_refresh":true,"ical":{"display_link":true,"link":{"url":"\/?post_type=tribe_events&eventDisplay=widget-events-list&ical=1","text":"Export Events","title":"Use this to share calendar data with Google Calendar, Apple iCal and other compatible apps"}},"container_classes":["tribe-common","tribe-events","tribe-events-view","tribe-events-view--widget-events-list","tribe-events-widget"],"container_data":[],"is_past":false,"breakpoints":{"xsmall":500,"medium":768,"full":960},"breakpoint_pointer":"674159de-e8fd-4168-8c3d-24a03d2d96df","is_initial_load":true,"public_views":{"list":{"view_class":"Tribe\\Events\\Views\\V2\\Views\\List_View","view_url":"\/events\/list\/","view_label":"List","aria_label":"Display Events in List View"},"month":{"view_class":"Tribe\\Events\\Views\\V2\\Views\\Month_View","view_url":"\/events\/month\/","view_label":"Month","aria_label":"Display Events in Month View"},"day":{"view_class":"Tribe\\Events\\Views\\V2\\Views\\Day_View","view_url":"\/events\/today\/","view_label":"Day","aria_label":"Display Events in Day View"}},"show_latest_past":false,"past":false,"compatibility_classes":["tribe-compatibility-container"],"view_more_text":"View Calendar","view_more_title":"View more events.","view_more_link":"\/events\/","widget_title":"Upcoming Events","hide_if_no_upcoming_events":false,"display":[],"subscribe_links":{"gcal":{"label":"Google Calendar","single_label":"Add to Google Calendar","visible":true,"block_slug":"hasGoogleCalendar"},"ical":{"label":"iCalendar","single_label":"Add to iCalendar","visible":true,"block_slug":"hasiCal"},"outlook-365":{"label":"Outlook 365","single_label":"Outlook 365","visible":true,"block_slug":"hasOutlook365"},"outlook-live":{"label":"Outlook Live","single_label":"Outlook Live","visible":true,"block_slug":"hasOutlookLive"}},"_context":{"slug":"widget-events-list"}}</script>
+	{"slug":"widget-events-list","prev_url":"","next_url":"","view_class":"Tribe\\Events\\Views\\V2\\Views\\Widgets\\Widget_List_View","view_slug":"widget-events-list","view_label":"View","view":null,"should_manage_url":true,"id":null,"alias-slugs":null,"title":"Economic delusions cannot save us from the climate crisis and societal decay - The Gower Initiative for Modern Money Studies","limit":"5","no_upcoming_events":false,"featured_events_only":false,"jsonld_enable":true,"tribe_is_list_widget":false,"admin_fields":{"title":{"label":"Title:","type":"text","parent_classes":"","classes":"","dependency":"","id":"widget-tribe-widget-events-list-3-title","name":"widget-tribe-widget-events-list[3][title]","options":[],"placeholder":"","value":null},"limit":{"label":"Show:","type":"number","default":5,"min":1,"max":10,"step":1,"parent_classes":"","classes":"","dependency":"","id":"widget-tribe-widget-events-list-3-limit","name":"widget-tribe-widget-events-list[3][limit]","options":[],"placeholder":"","value":null},"no_upcoming_events":{"label":"Hide this widget if there are no upcoming events.","type":"checkbox","parent_classes":"","classes":"","dependency":"","id":"widget-tribe-widget-events-list-3-no_upcoming_events","name":"widget-tribe-widget-events-list[3][no_upcoming_events]","options":[],"placeholder":"","value":null},"featured_events_only":{"label":"Limit to featured events only","type":"checkbox","parent_classes":"","classes":"","dependency":"","id":"widget-tribe-widget-events-list-3-featured_events_only","name":"widget-tribe-widget-events-list[3][featured_events_only]","options":[],"placeholder":"","value":null},"jsonld_enable":{"label":"Generate JSON-LD data","type":"checkbox","parent_classes":"","classes":"","dependency":"","id":"widget-tribe-widget-events-list-3-jsonld_enable","name":"widget-tribe-widget-events-list[3][jsonld_enable]","options":[],"placeholder":"","value":null}},"events":[],"url":"\/?post_type=tribe_events&eventDisplay=widget-events-list","url_event_date":false,"bar":{"keyword":"","date":""},"today":"2026-10-20 00:00:00","now":"2026-10-20 21:46:23","home_url":"","rest_url":"\/wp-json\/tribe\/views\/v2\/html","rest_method":"GET","rest_nonce":"","today_url":"\/?post_type=tribe_events&eventDisplay=widget-events-list&year=2023&monthnum=08&day=06&name=economic-delusions","today_title":"Click to select today's date","today_label":"Today","prev_label":"","next_label":"","date_formats":{"compact":"Y-m-d","month_and_year_compact":"Y-m","month_and_year":"F Y","time_range_separator":" - ","date_time_separator":" @ "},"messages":{"notice":["There are no upcoming events."]},"start_of_week":"1","header_title":"","header_title_element":"h1","content_title":"","show_content_title":false,"breadcrumbs":[],"backlink":false,"before_events":"","after_events":"\n<!--\nThis calendar is powered by The Events Calendar.\nhttp:\/\/evnt.is\/18wn\n-->\n","display_events_bar":false,"disable_event_search":false,"live_refresh":true,"ical":{"display_link":true,"link":{"url":"\/?post_type=tribe_events&eventDisplay=widget-events-list&ical=1","text":"Export Events","title":"Use this to share calendar data with Google Calendar, Apple iCal and other compatible apps"}},"container_classes":["tribe-common","tribe-events","tribe-events-view","tribe-events-view--widget-events-list","tribe-events-widget"],"container_data":[],"is_past":false,"breakpoints":{"xsmall":500,"medium":768,"full":960},"breakpoint_pointer":"1346cbe9-0144-40e9-9caa-9361c2903db4","is_initial_load":true,"public_views":{"list":{"view_class":"Tribe\\Events\\Views\\V2\\Views\\List_View","view_url":"\/events\/list\/","view_label":"List","aria_label":"Display Events in List View"},"month":{"view_class":"Tribe\\Events\\Views\\V2\\Views\\Month_View","view_url":"\/events\/month\/","view_label":"Month","aria_label":"Display Events in Month View"},"day":{"view_class":"Tribe\\Events\\Views\\V2\\Views\\Day_View","view_url":"\/events\/today\/","view_label":"Day","aria_label":"Display Events in Day View"}},"show_latest_past":false,"past":false,"compatibility_classes":["tribe-compatibility-container"],"view_more_text":"View Calendar","view_more_title":"View more events.","view_more_link":"\/events\/","widget_title":"Upcoming Events","hide_if_no_upcoming_events":false,"display":[],"subscribe_links":{"gcal":{"label":"Google Calendar","single_label":"Add to Google Calendar","visible":true,"block_slug":"hasGoogleCalendar"},"ical":{"label":"iCalendar","single_label":"Add to iCalendar","visible":true,"block_slug":"hasiCal"},"outlook-365":{"label":"Outlook 365","single_label":"Outlook 365","visible":true,"block_slug":"hasOutlook365"},"outlook-live":{"label":"Outlook Live","single_label":"Outlook Live","visible":true,"block_slug":"hasOutlookLive"}},"_context":{"slug":"widget-events-list"}}</script>
 
 							<header class="tribe-events-widget-events-list__header">
 					<h2 class="tribe-events-widget-events-list__header-title tribe-common-h6 tribe-common-h--alt">
@@ -711,7 +927,7 @@ h1:where(.wp-block-heading).has-background,h2:where(.wp-block-heading).has-backg
 				return;
 			}
 
-			var container = document.querySelectorAll( '[data-view-breakpoint-pointer="674159de-e8fd-4168-8c3d-24a03d2d96df"]' );
+			var container = document.querySelectorAll( '[data-view-breakpoint-pointer="1346cbe9-0144-40e9-9caa-9361c2903db4"]' );
 			if ( ! container ) {
 				return;
 			}
@@ -811,7 +1027,278 @@ h1:where(.wp-block-heading).has-background,h2:where(.wp-block-heading).has-backg
             
 		</div><!-- .hitmag-grid-category-posts -->
 
-	</section><section id="block-6" class="widget widget_block"></section>
+	</section><section id="block-6" class="widget widget_block">
+<!-- Custom Twitter Feeds by Smash Balloon -->
+<div id="ctf" role="region" aria-label="Twitter Feed" class=" ctf ctf-type-usertimeline ctf-rebranded ctf-feed-1  ctf-styles ctf-list ctf-regular-style" data-ctfshortcode="{&quot;feed&quot;:1}" data-ctfdisablelinks="false" data-ctflinktextcolor="#" data-header-size="small" data-feedid="1" data-postid="3775" data-feed="1" data-ctfintents="1" data-ctfneeded="-14">
+        <div class="ctf-tweets" role="list">
+   		
+<div role="listitem" class="ctf-item ctf-author-gowerinitiative ctf-new ctf-hide-avatar ctf-retweet" id="2003764807657468335">
+
+		<div class="ctf-context">
+	    <a href="https://twitter.com/intent/user?screen_name=GowerInitiative" target="_blank" rel="nofollow noopener noreferrer" class="ctf-retweet-icon"><svg class="svg-inline--fa fa-w-16" viewbox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z"></path></svg><span class="ctf-screenreader">Retweet on Twitter</span></a>
+	    <a href="https://twitter.com/gowerinitiative" target="_blank" rel="nofollow noopener noreferrer" class="ctf-retweet-text">Gower Initiative for Modern Money Studies Retweeted</a>
+	</div>
+
+	<div class="ctf-author-box">
+		<div class="ctf-author-box-link">
+	        				
+									<h3 class="ctf-author-name-heading" style="display:inline;margin:0;padding:0;font:inherit;color:inherit;"><a href="https://twitter.com/sarahollando552" target="_blank" rel="noopener noreferrer" class="ctf-author-name">SHolland</a></h3>
+										<a href="https://twitter.com/sarahollando552" class="ctf-author-screenname" target="_blank" rel="noopener noreferrer">@sarahollando552</a>
+					<span class="ctf-screename-sep">·</span>
+					        
+							<div class="ctf-tweet-meta">
+					<a href="https://twitter.com/sarahollando552/status/2003764807657468335" class="ctf-tweet-date" target="_blank" rel="noopener noreferrer">24 Dec</a>
+				</div>
+					</div>
+	    			<div class="ctf-corner-logo">
+				<svg aria-hidden="true" focusable="false" width="30" height="30" viewbox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.1161 6.27344H24.2289L17.4284 14.0459L25.4286 24.6225H19.1645L14.2583 18.2079L8.6444 24.6225H5.52976L12.8035 16.309L5.12891 6.27344H11.552L15.9868 12.1367L21.1161 6.27344ZM20.0236 22.7594H21.7484L10.6148 8.03871H8.7639L20.0236 22.7594Z" fill="black"></path>
+			</svg>			</div>
+		
+	</div>
+	<div class="ctf-tweet-content">
+		                <p class="ctf-tweet-text">
+                                        True for the US<br>
+True for the U.K. <br>
+#MMT @wbmosler <br>
+@GowerInitiative                                                        </p>
+            	</div>
+
+		
+	<div class="ctf-tweet-actions">
+		
+		<a href="https://twitter.com/intent/tweet?in_reply_to=2003764807657468335&amp;related=sarahollando552" class="ctf-reply" target="_blank" rel="noopener noreferrer">
+			<svg class="svg-inline--fa fa-w-16" viewbox="0 0 24 24" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><g><path fill="currentColor" d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z"></path></g></svg>			<span class="ctf-screenreader">Reply on Twitter 2003764807657468335</span>
+		</a>
+
+		<a href="https://twitter.com/intent/retweet?tweet_id=2003764807657468335&amp;related=sarahollando552" class="ctf-retweet" target="_blank" rel="noopener noreferrer"><svg class="svg-inline--fa fa-w-16" viewbox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z"></path></svg>			<span class="ctf-screenreader">Retweet on Twitter 2003764807657468335</span>
+			<span class="ctf-action-count ctf-retweet-count">14</span>
+		</a>
+
+		<a href="https://twitter.com/intent/like?tweet_id=2003764807657468335&amp;related=sarahollando552" class="ctf-like" target="_blank" rel="nofollow noopener noreferrer">
+			<svg class="svg-inline--fa fa-w-16" viewbox="0 0 24 24" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><g><path fill="currentColor" d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z"></path></g></svg>			<span class="ctf-screenreader">Like on Twitter 2003764807657468335</span>
+			<span class="ctf-action-count ctf-favorite-count">24</span>
+		</a>
+		
+					<a href="https://twitter.com/sarahollando552/status/2003764807657468335" class="ctf-twitterlink" target="_blank" rel="nofollow noopener noreferrer">
+				<span>Twitter</span>
+				<span class="ctf-screenreader">2003764807657468335</span>
+			</a>
+			</div>
+</div>
+<div role="listitem" class="ctf-item ctf-author-gowerinitiative ctf-new ctf-hide-avatar ctf-retweet" id="2004629059410485525">
+
+		<div class="ctf-context">
+	    <a href="https://twitter.com/intent/user?screen_name=GowerInitiative" target="_blank" rel="nofollow noopener noreferrer" class="ctf-retweet-icon"><svg class="svg-inline--fa fa-w-16" viewbox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z"></path></svg><span class="ctf-screenreader">Retweet on Twitter</span></a>
+	    <a href="https://twitter.com/gowerinitiative" target="_blank" rel="nofollow noopener noreferrer" class="ctf-retweet-text">Gower Initiative for Modern Money Studies Retweeted</a>
+	</div>
+
+	<div class="ctf-author-box">
+		<div class="ctf-author-box-link">
+	        				
+									<h3 class="ctf-author-name-heading" style="display:inline;margin:0;padding:0;font:inherit;color:inherit;"><a href="https://twitter.com/widespreadhaze" target="_blank" rel="noopener noreferrer" class="ctf-author-name">Tally Sticks</a></h3>
+										<a href="https://twitter.com/widespreadhaze" class="ctf-author-screenname" target="_blank" rel="noopener noreferrer">@widespreadhaze</a>
+					<span class="ctf-screename-sep">·</span>
+					        
+							<div class="ctf-tweet-meta">
+					<a href="https://twitter.com/widespreadhaze/status/2004629059410485525" class="ctf-tweet-date" target="_blank" rel="noopener noreferrer">26 Dec</a>
+				</div>
+					</div>
+	    			<div class="ctf-corner-logo">
+				<svg aria-hidden="true" focusable="false" width="30" height="30" viewbox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.1161 6.27344H24.2289L17.4284 14.0459L25.4286 24.6225H19.1645L14.2583 18.2079L8.6444 24.6225H5.52976L12.8035 16.309L5.12891 6.27344H11.552L15.9868 12.1367L21.1161 6.27344ZM20.0236 22.7594H21.7484L10.6148 8.03871H8.7639L20.0236 22.7594Z" fill="black"></path>
+			</svg>			</div>
+		
+	</div>
+	<div class="ctf-tweet-content">
+		                <p class="ctf-tweet-text">
+                                        @grenville_1 @DanielJHannan First government does not spend by printing money. <br>
+<br>
+What makes us richer are the resources that are mobilised by both government and private spending. <br>
+<br>
+At the global level all financial liabilities and all financial assets offset each other, cancelling to zero. What remains are                                                        </p>
+            	</div>
+
+		
+	<div class="ctf-tweet-actions">
+		
+		<a href="https://twitter.com/intent/tweet?in_reply_to=2004629059410485525&amp;related=widespreadhaze" class="ctf-reply" target="_blank" rel="noopener noreferrer">
+			<svg class="svg-inline--fa fa-w-16" viewbox="0 0 24 24" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><g><path fill="currentColor" d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z"></path></g></svg>			<span class="ctf-screenreader">Reply on Twitter 2004629059410485525</span>
+		</a>
+
+		<a href="https://twitter.com/intent/retweet?tweet_id=2004629059410485525&amp;related=widespreadhaze" class="ctf-retweet" target="_blank" rel="noopener noreferrer"><svg class="svg-inline--fa fa-w-16" viewbox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z"></path></svg>			<span class="ctf-screenreader">Retweet on Twitter 2004629059410485525</span>
+			<span class="ctf-action-count ctf-retweet-count">8</span>
+		</a>
+
+		<a href="https://twitter.com/intent/like?tweet_id=2004629059410485525&amp;related=widespreadhaze" class="ctf-like" target="_blank" rel="nofollow noopener noreferrer">
+			<svg class="svg-inline--fa fa-w-16" viewbox="0 0 24 24" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><g><path fill="currentColor" d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z"></path></g></svg>			<span class="ctf-screenreader">Like on Twitter 2004629059410485525</span>
+			<span class="ctf-action-count ctf-favorite-count">26</span>
+		</a>
+		
+					<a href="https://twitter.com/widespreadhaze/status/2004629059410485525" class="ctf-twitterlink" target="_blank" rel="nofollow noopener noreferrer">
+				<span>Twitter</span>
+				<span class="ctf-screenreader">2004629059410485525</span>
+			</a>
+			</div>
+</div>
+<div role="listitem" class="ctf-item ctf-author-gowerinitiative ctf-new ctf-hide-avatar ctf-retweet" id="2004597787976257665">
+
+		<div class="ctf-context">
+	    <a href="https://twitter.com/intent/user?screen_name=GowerInitiative" target="_blank" rel="nofollow noopener noreferrer" class="ctf-retweet-icon"><svg class="svg-inline--fa fa-w-16" viewbox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z"></path></svg><span class="ctf-screenreader">Retweet on Twitter</span></a>
+	    <a href="https://twitter.com/gowerinitiative" target="_blank" rel="nofollow noopener noreferrer" class="ctf-retweet-text">Gower Initiative for Modern Money Studies Retweeted</a>
+	</div>
+
+	<div class="ctf-author-box">
+		<div class="ctf-author-box-link">
+	        				
+									<h3 class="ctf-author-name-heading" style="display:inline;margin:0;padding:0;font:inherit;color:inherit;"><a href="https://twitter.com/widespreadhaze" target="_blank" rel="noopener noreferrer" class="ctf-author-name">Tally Sticks</a></h3>
+										<a href="https://twitter.com/widespreadhaze" class="ctf-author-screenname" target="_blank" rel="noopener noreferrer">@widespreadhaze</a>
+					<span class="ctf-screename-sep">·</span>
+					        
+							<div class="ctf-tweet-meta">
+					<a href="https://twitter.com/widespreadhaze/status/2004597787976257665" class="ctf-tweet-date" target="_blank" rel="noopener noreferrer">26 Dec</a>
+				</div>
+					</div>
+	    			<div class="ctf-corner-logo">
+				<svg aria-hidden="true" focusable="false" width="30" height="30" viewbox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.1161 6.27344H24.2289L17.4284 14.0459L25.4286 24.6225H19.1645L14.2583 18.2079L8.6444 24.6225H5.52976L12.8035 16.309L5.12891 6.27344H11.552L15.9868 12.1367L21.1161 6.27344ZM20.0236 22.7594H21.7484L10.6148 8.03871H8.7639L20.0236 22.7594Z" fill="black"></path>
+			</svg>			</div>
+		
+	</div>
+	<div class="ctf-tweet-content">
+		                <p class="ctf-tweet-text">
+                                        @DanielJHannan Good question. The answer is simply that our ancestors ran a commodity based currency system: a silver standard. However, for centuries they utilised systems to bypass the silver constraint, such as ‘tallies of pro’. The ancient Exchequer of Receipt was in effect a clearing house                                                        </p>
+            	</div>
+
+		
+	<div class="ctf-tweet-actions">
+		
+		<a href="https://twitter.com/intent/tweet?in_reply_to=2004597787976257665&amp;related=widespreadhaze" class="ctf-reply" target="_blank" rel="noopener noreferrer">
+			<svg class="svg-inline--fa fa-w-16" viewbox="0 0 24 24" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><g><path fill="currentColor" d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z"></path></g></svg>			<span class="ctf-screenreader">Reply on Twitter 2004597787976257665</span>
+		</a>
+
+		<a href="https://twitter.com/intent/retweet?tweet_id=2004597787976257665&amp;related=widespreadhaze" class="ctf-retweet" target="_blank" rel="noopener noreferrer"><svg class="svg-inline--fa fa-w-16" viewbox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z"></path></svg>			<span class="ctf-screenreader">Retweet on Twitter 2004597787976257665</span>
+			<span class="ctf-action-count ctf-retweet-count">6</span>
+		</a>
+
+		<a href="https://twitter.com/intent/like?tweet_id=2004597787976257665&amp;related=widespreadhaze" class="ctf-like" target="_blank" rel="nofollow noopener noreferrer">
+			<svg class="svg-inline--fa fa-w-16" viewbox="0 0 24 24" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><g><path fill="currentColor" d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z"></path></g></svg>			<span class="ctf-screenreader">Like on Twitter 2004597787976257665</span>
+			<span class="ctf-action-count ctf-favorite-count">36</span>
+		</a>
+		
+					<a href="https://twitter.com/widespreadhaze/status/2004597787976257665" class="ctf-twitterlink" target="_blank" rel="nofollow noopener noreferrer">
+				<span>Twitter</span>
+				<span class="ctf-screenreader">2004597787976257665</span>
+			</a>
+			</div>
+</div>
+<div role="listitem" class="ctf-item ctf-author-gowerinitiative ctf-new ctf-hide-avatar ctf-retweet" id="2001575235376808124">
+
+		<div class="ctf-context">
+	    <a href="https://twitter.com/intent/user?screen_name=GowerInitiative" target="_blank" rel="nofollow noopener noreferrer" class="ctf-retweet-icon"><svg class="svg-inline--fa fa-w-16" viewbox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z"></path></svg><span class="ctf-screenreader">Retweet on Twitter</span></a>
+	    <a href="https://twitter.com/gowerinitiative" target="_blank" rel="nofollow noopener noreferrer" class="ctf-retweet-text">Gower Initiative for Modern Money Studies Retweeted</a>
+	</div>
+
+	<div class="ctf-author-box">
+		<div class="ctf-author-box-link">
+	        				
+									<h3 class="ctf-author-name-heading" style="display:inline;margin:0;padding:0;font:inherit;color:inherit;"><a href="https://twitter.com/widespreadhaze" target="_blank" rel="noopener noreferrer" class="ctf-author-name">Tally Sticks</a></h3>
+										<a href="https://twitter.com/widespreadhaze" class="ctf-author-screenname" target="_blank" rel="noopener noreferrer">@widespreadhaze</a>
+					<span class="ctf-screename-sep">·</span>
+					        
+							<div class="ctf-tweet-meta">
+					<a href="https://twitter.com/widespreadhaze/status/2001575235376808124" class="ctf-tweet-date" target="_blank" rel="noopener noreferrer">18 Dec</a>
+				</div>
+					</div>
+	    			<div class="ctf-corner-logo">
+				<svg aria-hidden="true" focusable="false" width="30" height="30" viewbox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.1161 6.27344H24.2289L17.4284 14.0459L25.4286 24.6225H19.1645L14.2583 18.2079L8.6444 24.6225H5.52976L12.8035 16.309L5.12891 6.27344H11.552L15.9868 12.1367L21.1161 6.27344ZM20.0236 22.7594H21.7484L10.6148 8.03871H8.7639L20.0236 22.7594Z" fill="black"></path>
+			</svg>			</div>
+		
+	</div>
+	<div class="ctf-tweet-content">
+		                <p class="ctf-tweet-text">
+                                        The money comes from MPs votes. It’s called ‘Money from Parliament’.<br>
+<br>
+You are an MP and should know this, it is your job after all.                                                        </p>
+            	</div>
+
+		
+	<div class="ctf-tweet-actions">
+		
+		<a href="https://twitter.com/intent/tweet?in_reply_to=2001575235376808124&amp;related=widespreadhaze" class="ctf-reply" target="_blank" rel="noopener noreferrer">
+			<svg class="svg-inline--fa fa-w-16" viewbox="0 0 24 24" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><g><path fill="currentColor" d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z"></path></g></svg>			<span class="ctf-screenreader">Reply on Twitter 2001575235376808124</span>
+		</a>
+
+		<a href="https://twitter.com/intent/retweet?tweet_id=2001575235376808124&amp;related=widespreadhaze" class="ctf-retweet" target="_blank" rel="noopener noreferrer"><svg class="svg-inline--fa fa-w-16" viewbox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z"></path></svg>			<span class="ctf-screenreader">Retweet on Twitter 2001575235376808124</span>
+			<span class="ctf-action-count ctf-retweet-count">6</span>
+		</a>
+
+		<a href="https://twitter.com/intent/like?tweet_id=2001575235376808124&amp;related=widespreadhaze" class="ctf-like" target="_blank" rel="nofollow noopener noreferrer">
+			<svg class="svg-inline--fa fa-w-16" viewbox="0 0 24 24" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><g><path fill="currentColor" d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z"></path></g></svg>			<span class="ctf-screenreader">Like on Twitter 2001575235376808124</span>
+			<span class="ctf-action-count ctf-favorite-count">18</span>
+		</a>
+		
+					<a href="https://twitter.com/widespreadhaze/status/2001575235376808124" class="ctf-twitterlink" target="_blank" rel="nofollow noopener noreferrer">
+				<span>Twitter</span>
+				<span class="ctf-screenreader">2001575235376808124</span>
+			</a>
+			</div>
+</div>
+<div role="listitem" class="ctf-item ctf-author-gowerinitiative ctf-new ctf-hide-avatar ctf-retweet" id="2001730060789666090">
+
+		<div class="ctf-context">
+	    <a href="https://twitter.com/intent/user?screen_name=GowerInitiative" target="_blank" rel="nofollow noopener noreferrer" class="ctf-retweet-icon"><svg class="svg-inline--fa fa-w-16" viewbox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z"></path></svg><span class="ctf-screenreader">Retweet on Twitter</span></a>
+	    <a href="https://twitter.com/gowerinitiative" target="_blank" rel="nofollow noopener noreferrer" class="ctf-retweet-text">Gower Initiative for Modern Money Studies Retweeted</a>
+	</div>
+
+	<div class="ctf-author-box">
+		<div class="ctf-author-box-link">
+	        				
+									<h3 class="ctf-author-name-heading" style="display:inline;margin:0;padding:0;font:inherit;color:inherit;"><a href="https://twitter.com/ptcherneva" target="_blank" rel="noopener noreferrer" class="ctf-author-name">Pavlina R Tcherneva</a></h3>
+										<a href="https://twitter.com/ptcherneva" class="ctf-author-screenname" target="_blank" rel="noopener noreferrer">@ptcherneva</a>
+					<span class="ctf-screename-sep">·</span>
+					        
+							<div class="ctf-tweet-meta">
+					<a href="https://twitter.com/ptcherneva/status/2001730060789666090" class="ctf-tweet-date" target="_blank" rel="noopener noreferrer">18 Dec</a>
+				</div>
+					</div>
+	    			<div class="ctf-corner-logo">
+				<svg aria-hidden="true" focusable="false" width="30" height="30" viewbox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.1161 6.27344H24.2289L17.4284 14.0459L25.4286 24.6225H19.1645L14.2583 18.2079L8.6444 24.6225H5.52976L12.8035 16.309L5.12891 6.27344H11.552L15.9868 12.1367L21.1161 6.27344ZM20.0236 22.7594H21.7484L10.6148 8.03871H8.7639L20.0236 22.7594Z" fill="black"></path>
+			</svg>			</div>
+		
+	</div>
+	<div class="ctf-tweet-content">
+		                <p class="ctf-tweet-text">
+                                        We call on the Indian government to recommit to MGNREGA &amp; its demand-driven access to employment from a human rights perspective. Join me, @JosephEStiglitz, @MazzucatoM, @Ferreras_Isa, @PikettyWIL, @srpoverty, @DarrickHamilton, @Jayati1609 and other experts by signing our letter.                                                        </p>
+            	</div>
+
+		
+	<div class="ctf-tweet-actions">
+		
+		<a href="https://twitter.com/intent/tweet?in_reply_to=2001730060789666090&amp;related=ptcherneva" class="ctf-reply" target="_blank" rel="noopener noreferrer">
+			<svg class="svg-inline--fa fa-w-16" viewbox="0 0 24 24" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><g><path fill="currentColor" d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z"></path></g></svg>			<span class="ctf-screenreader">Reply on Twitter 2001730060789666090</span>
+		</a>
+
+		<a href="https://twitter.com/intent/retweet?tweet_id=2001730060789666090&amp;related=ptcherneva" class="ctf-retweet" target="_blank" rel="noopener noreferrer"><svg class="svg-inline--fa fa-w-16" viewbox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z"></path></svg>			<span class="ctf-screenreader">Retweet on Twitter 2001730060789666090</span>
+			<span class="ctf-action-count ctf-retweet-count">20</span>
+		</a>
+
+		<a href="https://twitter.com/intent/like?tweet_id=2001730060789666090&amp;related=ptcherneva" class="ctf-like" target="_blank" rel="nofollow noopener noreferrer">
+			<svg class="svg-inline--fa fa-w-16" viewbox="0 0 24 24" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><g><path fill="currentColor" d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z"></path></g></svg>			<span class="ctf-screenreader">Like on Twitter 2001730060789666090</span>
+			<span class="ctf-action-count ctf-favorite-count">24</span>
+		</a>
+		
+					<a href="https://twitter.com/ptcherneva/status/2001730060789666090" class="ctf-twitterlink" target="_blank" rel="nofollow noopener noreferrer">
+				<span>Twitter</span>
+				<span class="ctf-screenreader">2001730060789666090</span>
+			</a>
+			</div>
+</div>    </div>
+    
+<div class="ctf-screenreader" aria-live="polite" aria-atomic="true" data-ctf-feed-status></div>
+
+    <button type="button" id="ctf-more" class="ctf-more"><span>Load More...</span></button>
+
+
+</div>
+</section>
 	
 </aside><!-- #secondary -->	</div><!-- .hm-container -->
 	</div><!-- #content -->
@@ -865,13 +1352,35 @@ h1:where(.wp-block-heading).has-background,h2:where(.wp-block-heading).has-backg
 			body.className = body.className.replace( /\btribe-no-js\b/, 'tribe-js' );
 		} )( document.body );
 		</script>
-		<script> /* <![CDATA[ */var tribe_l10n_datatables = {"aria":{"sort_ascending":": activate to sort column ascending","sort_descending":": activate to sort column descending"},"length_menu":"Show _MENU_ entries","empty_table":"No data available in table","info":"Showing _START_ to _END_ of _TOTAL_ entries","info_empty":"Showing 0 to 0 of 0 entries","info_filtered":"(filtered from _MAX_ total entries)","zero_records":"No matching records found","search":"Search:","all_selected_text":"All items on this page were selected. ","select_all_link":"Select all pages","clear_selection":"Clear Selection.","pagination":{"all":"All","next":"Next","previous":"Previous"},"select":{"rows":{"0":"","_":": Selected %d rows","1":": Selected 1 row"}},"datepicker":{"dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesMin":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Prev","currentText":"Today","closeText":"Done","today":"Today","clear":"Clear"}};/* ]]> */ </script><link rel="stylesheet" id="tec-variables-skeleton-css" href="/wp-content/plugins/the-events-calendar/common/build/css/variables-skeleton.css?ver=6.13.2" media="all">
+		<script> /* <![CDATA[ */var tribe_l10n_datatables = {"aria":{"sort_ascending":": activate to sort column ascending","sort_descending":": activate to sort column descending"},"length_menu":"Show _MENU_ entries","empty_table":"No data available in table","info":"Showing _START_ to _END_ of _TOTAL_ entries","info_empty":"Showing 0 to 0 of 0 entries","info_filtered":"(filtered from _MAX_ total entries)","zero_records":"No matching records found","search":"Search:","all_selected_text":"All items on this page were selected. ","select_all_link":"Select all pages","clear_selection":"Clear Selection.","pagination":{"all":"All","next":"Next","previous":"Previous"},"select":{"rows":{"0":"","_":": Selected %d rows","1":": Selected 1 row"}},"datepicker":{"dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesMin":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Prev","currentText":"Today","closeText":"Done","today":"Today","clear":"Clear"}};/* ]]> */ </script><style type="text/css" data-ctf-style="1">.ctf-feed-1.ctf-regular-style .ctf-item, .ctf-feed-1 .ctf-header{border-bottom:1px solid #ddd!important;}</style><script>
+var HCaptchaMainObject = {"params":"{\"sitekey\":\"10000000-ffff-ffff-ffff-000000000001\",\"theme\":\"light\",\"size\":\"normal\",\"hl\":\"en\"}"};
+</script>
+<script>
+(()=>{'use strict';let loaded=!1,scrolled=!1,timerId;function load(){if(loaded){return}
+loaded=!0;clearTimeout(timerId);window.removeEventListener('touchstart',load);document.body.removeEventListener('mouseenter',load);document.body.removeEventListener('click',load);window.removeEventListener('keydown',load);window.removeEventListener('scroll',scrollHandler);const t=document.getElementsByTagName('script')[0];const s=document.createElement('script');s.type='text/javascript';s.id='hcaptcha-api';s.src='https://js.hcaptcha.com/1/api.js?onload=hCaptchaOnLoad&render=explicit';s.async=!0;t.parentNode.insertBefore(s,t)}
+function scrollHandler(){if(!scrolled){scrolled=!0;return}
+load()}
+document.addEventListener('hCaptchaBeforeAPI',function(){const delay=-100;if(delay>=0){timerId=setTimeout(load,delay)}
+const options={passive:!0};window.addEventListener('touchstart',load,options);document.body.addEventListener('mouseenter',load);document.body.addEventListener('click',load);window.addEventListener('keydown',load);window.addEventListener('scroll',scrollHandler,options)})})()
+</script>
+<link rel="stylesheet" id="tec-variables-skeleton-css" href="/wp-content/plugins/the-events-calendar/common/build/css/variables-skeleton.css?ver=6.13.2" media="all">
 <link rel="stylesheet" id="tribe-common-skeleton-style-css" href="/wp-content/plugins/the-events-calendar/common/build/css/common-skeleton.css?ver=6.13.2" media="all">
 <link rel="stylesheet" id="tribe-events-widgets-v2-events-list-skeleton-css" href="/wp-content/plugins/the-events-calendar/build/css/widget-events-list-skeleton.css?ver=6.18.2" media="all">
 <link rel="stylesheet" id="tec-variables-full-css" href="/wp-content/plugins/the-events-calendar/common/build/css/variables-full.css?ver=6.13.2" media="all">
 <link rel="stylesheet" id="tribe-common-full-style-css" href="/wp-content/plugins/the-events-calendar/common/build/css/common-full.css?ver=6.13.2" media="all">
 <link rel="stylesheet" id="tribe-events-widgets-v2-events-list-full-css" href="/wp-content/plugins/the-events-calendar/build/css/widget-events-list-full.css?ver=6.18.2" media="all">
 <script id="tec-user-agent-js" src="/wp-content/plugins/the-events-calendar/common/build/js/user-agent.js?ver=da75d0bdea6dde3898df"></script>
+<script id="ssb-blocks-front-js-js" src="/wp-content/plugins/simple-social-buttons/assets/js/frontend-blocks.js?ver=7.2.0"></script>
+<script id="ssb-front-js-js-extra">
+var SSB = {"ajax_url":"/wp-admin/admin-ajax.php","share_track_nonce":"03700347f5","share_trackable_networks":["twitter","pinterest","linkedin","reddit","whatsapp","viber","messenger","email","copylink","print","bluesky","telegram","threads","mastodon","vk","snapchat","fbshare"],"popup_features":"menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600","i18n":{"hide_bar":"Hide social sharing bar","show_bar":"Show social sharing bar"}};
+//# sourceURL=ssb-front-js-js-extra
+</script>
+<script id="ssb-front-js-js" src="/wp-content/plugins/simple-social-buttons/assets/js/front.min.js?ver=7.2.0"></script>
+<script id="wpedon-js-extra">
+var wpedon = {"ajaxUrl":"/wp-admin/admin-ajax.php","nonce":"dc109039be","opens":"2","cancel":"/category/blogs/","return":"/thank-you/"};
+//# sourceURL=wpedon-js-extra
+</script>
+<script id="wpedon-js" src="/wp-content/plugins/easy-paypal-donation/assets/js/wpedon.js?ver=1.5.7"></script>
 <script id="linkprefetcher-js-before">
 window.LP_CONFIG = {"activeOnDesktop":true,"behavior":"mouseHover","hoverDelay":60,"instantClick":false,"activeOnMobile":true,"mobileBehavior":"viewport","ignoreKeywords":"#,?","isMobile":false}
 //# sourceURL=linkprefetcher-js-before
@@ -890,6 +1399,12 @@ window.LP_CONFIG = {"activeOnDesktop":true,"behavior":"mouseHover","hoverDelay":
 <script id="wp-hooks-js" src="/wp-includes/js/dist/hooks.min.js?ver=f0f188028580e8dc1255"></script>
 <script defer id="tribe-events-views-v2-manager-js" src="/wp-content/plugins/the-events-calendar/build/js/views/manager.js?ver=76866c0f9c1f9f397a02"></script>
 <script id="tribe-events-views-v2-breakpoints-js" src="/wp-content/plugins/the-events-calendar/build/js/views/breakpoints.js?ver=4208de2df2852e0b91ec"></script>
+<script id="ctf_scripts-js-extra">
+var ctf = {"ajax_url":"/wp-admin/admin-ajax.php","i18n":{"newTweetsLoaded":"%s new tweets loaded","noMoreTweets":"That's all! No more Tweets to load"}};
+//# sourceURL=ctf_scripts-js-extra
+</script>
+<script id="ctf_scripts-js" src="/wp-content/plugins/custom-twitter-feeds/js/ctf-scripts.min.js?ver=2.10.0#038;ver=2.10.0"></script>
+<script id="hcaptcha-js" src="/wp-content/plugins/hcaptcha-for-forms-and-more/assets/js/apps/hcaptcha.js?ver=5.4.1"></script>
 <script id="wp-emoji-settings" type="application/json">
 {"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"/wp-includes/js/wp-emoji-release.min.js?ver=7.1.3"}}
 </script>
@@ -898,5 +1413,39 @@ window.LP_CONFIG = {"activeOnDesktop":true,"behavior":"mouseHover","hoverDelay":
 var e="script#wp-emoji-settings",t=document.querySelector(e);if(!(t instanceof HTMLScriptElement))throw new Error("Element missing: "+e);const r=JSON.parse(t.text),s=(window._wpemojiSettings=r,"wpEmojiSettingsSupports"),o=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(s,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const r=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===r[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,r){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!r(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,r){let a;const s=(a="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),o=(s.textBaseline="top",s.font="600 32px Arial",{});return e.forEach(e=>{o[e]=t(s,e,n,r)}),o}function a(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}r.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(s));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(o),u.toString(),c.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"});const a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=e=>{i(n=e.data),a.terminate(),t(n)})}catch(e){}i(n=f(o,u,c,p))}t(n)}).then(e=>{for(const n in e)r.supports[n]=e[n],r.supports.everything=r.supports.everything&&r.supports[n],"flag"!==n&&(r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&r.supports[n]);var t;r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&!r.supports.flag,r.supports.everything||((t=r.source||{}).concatemoji?a(t.concatemoji):t.wpemoji&&t.twemoji&&(a(t.twemoji),a(t.wpemoji)))});
 //# sourceURL=/wp-includes/js/wp-emoji-loader.min.js
 </script>
-</body>
+<script type="text/javascript">
+		document.addEventListener("DOMContentLoaded", function() {
+			var if_ssb_exist = document.getElementsByClassName( "simplesocialbuttons" ).length > 0;
+			if (if_ssb_exist) {
+				var ssb_admin_ajax = '/wp-admin/admin-ajax.php';
+				var ssb_post_id = 3775 ;
+				jQuery( document ).ready(function(){
+				var is_ssb_used = jQuery('.simplesocialbuttons');
+				if( is_ssb_used ) {
+
+					var data = {
+					'action'    : 'ssb_fetch_data',
+					'postID'    :  ssb_post_id,
+					'security'  : 'b1fa563ec7',
+					'ssb_cache' : 'rebuild'
+					};
+					jQuery.post(ssb_admin_ajax, data, function(data, textStatus, xhr) {
+						var array = JSON.parse(data);
+
+						jQuery.each( array, function( index, value ){
+
+							if( index == 'total' ){
+								jQuery('.ssb_'+ index +'_counter').html(value + '<span>Shares</span>');
+							}else{
+								jQuery('.ssb_'+ index +'_counter').html(value);
+							}
+						});
+
+					});
+				}
+				})
+			}
+		});
+
+		</script></body>
 </html>

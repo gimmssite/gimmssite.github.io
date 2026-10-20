@@ -32,6 +32,7 @@
 	<!-- / Yoast SEO plugin. -->
 
 
+<link rel="dns-prefetch" href="//hcaptcha.com">
 
 <link rel="alternate" type="text/calendar" title="The Gower Initiative for Modern Money Studies » iCal Feed" href="/events/?ical=1">
 
@@ -83,6 +84,28 @@ h1:where(.wp-block-heading).has-background,h2:where(.wp-block-heading).has-backg
 /*# sourceURL=global-styles-inline-css */
 </style>
 
+<link rel="stylesheet" id="ssb-front-css-css" href="/wp-content/plugins/simple-social-buttons/assets/css/front.min.css?ver=7.2.0" media="all">
+<link rel="stylesheet" id="ctf_styles-css" href="/wp-content/plugins/custom-twitter-feeds/css/ctf-styles.min.css?ver=2.10.0" media="all">
+<link rel="stylesheet" id="wpedon-css" href="/wp-content/plugins/easy-paypal-donation/assets/css/wpedon.css?ver=1.5.7" media="all">
+<link rel="stylesheet" id="spacexchimp_p005-bootstrap-tooltip-css-css" href="/wp-content/plugins/social-media-buttons-toolbar/inc/lib/bootstrap-tooltip/bootstrap-tooltip.css?ver=5.0" media="all">
+<link rel="stylesheet" id="spacexchimp_p005-frontend-css-css" href="/wp-content/plugins/social-media-buttons-toolbar/inc/css/frontend.css?ver=5.0" media="all">
+<style id="spacexchimp_p005-frontend-css-inline-css">
+
+                    .sxc-follow-buttons {
+                        text-align: left !important;
+                    }
+                    .sxc-follow-buttons .sxc-follow-button,
+                    .sxc-follow-buttons .sxc-follow-button a,
+                    .sxc-follow-buttons .sxc-follow-button a img {
+                        width: 32px !important;
+                        height: 32px !important;
+                    }
+                    .sxc-follow-buttons .sxc-follow-button {
+                        margin: 5px !important;
+                    }
+                  
+/*# sourceURL=spacexchimp_p005-frontend-css-inline-css */
+</style>
 <link rel="stylesheet" id="default-icon-styles-css" href="/wp-content/plugins/svg-vector-icon-plugin/public//admin/css/wordpress-svg-icon-plugin-style.min.css?ver=7.1.3" media="all">
 <link rel="stylesheet" id="vlp-public-css" href="/wp-content/plugins/visual-link-preview/dist/public.css?ver=2.4.2" media="all">
 <style id="nfd-wonder-blocks-utilities-inline-css">
@@ -94,14 +117,30 @@ h1:where(.wp-block-heading).has-background,h2:where(.wp-block-heading).has-backg
 <link rel="stylesheet" id="hitmag-fonts-css" href="/wp-content/themes/hitmag/css/fonts.css" media="all">
 <link rel="stylesheet" id="hitmag-font-awesome-css" href="/wp-content/themes/hitmag/css/all.min.css?ver=6.5.1" media="all">
 <link rel="stylesheet" id="hitmag-style-css" href="/wp-content/themes/hitmag/style.css?ver=1.4.5" media="all">
+<script id="jquery-core-js" src="/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
+<script id="jquery-migrate-js" src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"></script>
+<script id="spacexchimp_p005-bootstrap-tooltip-js-js" src="/wp-content/plugins/social-media-buttons-toolbar/inc/lib/bootstrap-tooltip/bootstrap-tooltip.js?ver=5.0"></script>
 <script id="nfd-wonder-blocks-utilities-js-after">
 (()=>{var c=class{constructor({clientId:a,...n}={}){this.options={activeClass:"nfd-wb-animated-in",root:null,rootMargin:"0px",threshold:0,...n}}observeElements(a,n=null,t=!1){if(!("IntersectionObserver"in window)||!a?.length||document.documentElement.classList.contains("block-editor-block-preview__content-iframe"))return;function o(s,r){this._mutationCallback(s,r,n)}let i=new IntersectionObserver(this._handleIntersection.bind(this),this.options),f=new MutationObserver(o.bind(this)),d=new MutationObserver(this._handleClassMutation.bind(this));a.forEach(s=>{let r=s;s.classList.contains("nfd-wb-reveal-right")&&(r=s.parentElement),i.observe(r),t&&(d.observe(r,{attributes:!0,attributeFilter:["class"]}),f.observe(r,{attributes:!0,attributeFilter:["class"]}))})}_handleIntersection(a,n){a.forEach(t=>{t.isIntersecting&&(t.target.classList.add(this.options.activeClass),t.target.querySelectorAll(".nfd-wb-animate").forEach(o=>{o.classList.add(this.options.activeClass)}),n.unobserve(t.target))})}_handleClassMutation(a){a.forEach(n=>{if(n?.type==="attributes"){let t=n.target;t.classList.contains("nfd-wb-animated-in")||t.classList.add("nfd-wb-animated-in")}})}_mutationCallback(a,n,t=null){a.forEach(o=>{if(o?.type==="attributes"){let i=o.target;t&&t===i.getAttribute("data-block")&&(i.getAttribute("data-replay-animation")===null&&(i.setAttribute("data-replay-animation",!0),requestAnimationFrame(()=>{i.removeAttribute("data-replay-animation")})),n.disconnect())}})}};var w={"nfd-wb-fade-in-bottom":{from:{opacity:0,transform:"translate3d(0, 90px, 0)"},duration:1200},"nfd-wb-fade-in-bottom-short":{from:{opacity:0,transform:"translate3d(0, 32px, 0)"},duration:600},"nfd-wb-fade-in-top-short":{from:{opacity:0,transform:"translate3d(0, -32px, 0)"},duration:600},"nfd-wb-fade-in-left-short":{from:{opacity:0,transform:"translate3d(-32px, 0, 0)"},duration:600},"nfd-wb-fade-in-right-short":{from:{opacity:0,transform:"translate3d(32px, 0, 0)"},duration:600},"nfd-wb-zoom-in":{from:{opacity:0,transform:"scale3d(0.4, 0.4, 0.4)"},duration:1200},"nfd-wb-zoom-in-short":{from:{opacity:0,transform:"scale3d(0.92, 0.92, 0.92)"},duration:600},"nfd-wb-twist-in":{from:{opacity:0,transform:"translateY(40px) scale(0.8) rotateY(30deg) rotateZ(-12deg)"},duration:1e3},"nfd-wb-reveal-right":{from:{clipPath:"inset(0 100% 0 0)"},to:{clipPath:"inset(0 0 0 0)"},duration:1500,easing:"cubic-bezier(0.4, 0, 0, 1)"}};["DOMContentLoaded","wonder-blocks/toolbar-button-added","wonder-blocks/block-order-changed"].forEach(e=>document.addEventListener(e,()=>l()));document.addEventListener("wonder-blocks/animation-changed",e=>l(e?.detail?.clientId));window.onload=()=>l();document.readyState!=="loading"&&l();var b=!1;function l(e=null){document.documentElement.classList.contains("block-editor-block-preview__content-iframe")||(window.parent!==window?h():y(e))}var m=e=>e.split(/\s+/).find(a=>a in w)||"";function u(e){e.style.transition="none",e.classList.add("nfd-wb-animated-in"),requestAnimationFrame(()=>{e.style.transition=""})}function p(e,a){let n=w[a];n&&e.animate([n.from,n.to||{opacity:1,transform:"none"}],{duration:n.duration,easing:n.easing||"cubic-bezier(0.4, 1, 0.65, 1)"})}function h(){if(document.body&&document.body.classList.add("nfd-wb-editor-animations"),requestAnimationFrame(()=>{document.querySelectorAll(".nfd-wb-animate:not(.nfd-wb-animated-in)").forEach(t=>t.classList.add("nfd-wb-animated-in"))}),b)return;b=!0;let e=t=>{t.querySelectorAll&&t.querySelectorAll(".nfd-wb-animate:not(.nfd-wb-animated-in)").forEach(u),t.classList?.contains("nfd-wb-animate")&&!t.classList.contains("nfd-wb-animated-in")&&u(t)},a=new MutationObserver(t=>{for(let o of t){if(o.type==="childList"){for(let s of o.addedNodes)s.nodeType===1&&e(s);continue}if(o.type!=="attributes"||o.attributeName!=="class")continue;let i=o.target;if(!i.classList.contains("nfd-wb-animate")||i.classList.contains("nfd-wb-animated-in")||i.hasAttribute("data-replay-animation"))continue;let f=m(o.oldValue||""),d=m([...i.classList].join(" "));f!==d&&d?(i.classList.add("nfd-wb-animated-in"),p(i,d)):u(i)}}),n=()=>{if(!document.body){requestAnimationFrame(n);return}document.body.classList.add("nfd-wb-editor-animations"),a.observe(document.body,{attributes:!0,attributeFilter:["class"],attributeOldValue:!0,childList:!0,subtree:!0})};n()}function y(e=null){let a=document.body?.classList.contains("block-editor-page")||!!e,n=a?document.querySelector(".interface-interface-skeleton__content"):null,t=new c({root:n,threshold:0});requestAnimationFrame(()=>{t.observeElements(Array.from(document.getElementsByClassName("nfd-wb-animate")),e,a)})}})();
 
 //# sourceURL=nfd-wonder-blocks-utilities-js-after
 </script>
-<script id="jquery-core-js" src="/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
-<script id="jquery-migrate-js" src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"></script>
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
+
+<!-- Open Graph Meta Tags generated by Simple Social Buttons 7.2.0 -->
+<meta property="og:title" content="COVID-19 is our practice run. Our future survival may be at stake, but the solutions are within our grasp. NOW. - The Gower Initiative for Modern Money Studies">
+<meta property="og:type" content="website">
+<meta property="og:description" content="&quot;How all this plays out ultimately depends on us. The emperor is now naked and the ground for a radical paradigm shift - one based on popular sovereignty, democratic control over the economy, full employment, social justice, redistribution from the rich to the poor, relocalisation of production and the socio-ecological transformation…">
+<meta property="og:url" content="/2020/04/10/solutions/">
+<meta property="og:site_name" content="The Gower Initiative for Modern Money Studies">
+<meta property="og:image" content="/wp-content/uploads/2020/04/Image-by-FunkyFocus-from-Pixabay.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="&quot;How all this plays out ultimately depends on us. The emperor is now naked and the ground for a radical paradigm shift - one based on popular sovereignty, democratic control over the economy, full employment, social justice, redistribution from the rich to the poor, relocalisation of production and the socio-ecological transformation…">
+<meta name="twitter:title" content="COVID-19 is our practice run. Our future survival may be at stake, but the solutions are within our grasp. NOW. - The Gower Initiative for Modern Money Studies">
+<meta property="twitter:image" content="/wp-content/uploads/2020/04/Image-by-FunkyFocus-from-Pixabay.jpg">
+<style>
+.h-captcha{position:relative;display:block;margin-bottom:2rem;padding:0;clear:both}.h-captcha[data-size="normal"]{width:302px;height:76px}.h-captcha[data-size="compact"]{width:158px;height:138px}.h-captcha[data-size="invisible"]{display:none}.h-captcha iframe{z-index:1}.h-captcha::before{content:"";display:block;position:absolute;top:0;left:0;background:url(/wp-content/plugins/hcaptcha-for-forms-and-more/assets/images/hcaptcha-div-logo.svg) no-repeat;border:1px solid #fff0;border-radius:4px;box-sizing:border-box}.h-captcha::after{content:"If you see this message, hCaptcha failed to load due to site errors.";font-family:-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,"Helvetica Neue",Arial,sans-serif;font-size:10px;font-weight:500;position:absolute;top:0;bottom:0;left:0;right:0;box-sizing:border-box;color:#bf1722;opacity:0}.h-captcha.hcaptcha-api-delayed::after{content:"The hCaptcha loading is delayed until user interaction with the form.";color:#555}.h-captcha:not(:has(iframe))::after{animation:hcap-msg-fade-in .3s ease forwards;animation-delay:2s}.h-captcha.hcaptcha-api-delayed:not(:has(iframe))::after{animation-delay:0s}.h-captcha:has(iframe)::after{animation:none;opacity:0}@keyframes hcap-msg-fade-in{to{opacity:1}}.h-captcha[data-size="normal"]::before{width:302px;height:76px;background-position:93.8% 28%}.h-captcha[data-size="normal"]::after{width:302px;height:76px;display:flex;flex-wrap:wrap;align-content:center;line-height:normal;padding:0 75px 0 10px}.h-captcha[data-size="compact"]::before{width:158px;height:138px;background-position:49.9% 78.8%}.h-captcha[data-size="compact"]::after{width:158px;height:138px;text-align:center;line-height:normal;padding:24px 10px 10px 10px}.h-captcha[data-theme="light"]::before,body.is-light-theme .h-captcha[data-theme="auto"]::before,.h-captcha[data-theme="auto"]::before{background-color:#fafafa;border:1px solid #e0e0e0}.h-captcha[data-theme="dark"]::before,body.is-dark-theme .h-captcha[data-theme="auto"]::before,html.wp-dark-mode-active .h-captcha[data-theme="auto"]::before,html.drdt-dark-mode .h-captcha[data-theme="auto"]::before{background-image:url(/wp-content/plugins/hcaptcha-for-forms-and-more/assets/images/hcaptcha-div-logo-white.svg);background-repeat:no-repeat;background-color:#333;border:1px solid #f5f5f5}@media (prefers-color-scheme:dark){.h-captcha[data-theme="auto"]::before{background-image:url(/wp-content/plugins/hcaptcha-for-forms-and-more/assets/images/hcaptcha-div-logo-white.svg);background-repeat:no-repeat;background-color:#333;border:1px solid #f5f5f5}}.h-captcha[data-theme="custom"]::before{background-color:initial}.h-captcha[data-size="invisible"]::before,.h-captcha[data-size="invisible"]::after{display:none}.h-captcha iframe{position:relative}div[style*="z-index: 2147483647"] div[style*="border-width: 11px"][style*="position: absolute"][style*="pointer-events: none"]{border-style:none}p.hcaptcha-invisible-disclosure{padding:.5rem;margin-bottom:2rem!important}.h-captcha[data-theme="light"]+p.hcaptcha-invisible-disclosure,body.is-light-theme .h-captcha[data-theme="auto"]+p.hcaptcha-invisible-disclosure,.h-captcha[data-theme="auto"]+p.hcaptcha-invisible-disclosure{color:#333;background-color:#fafafa;border:1px solid #e0e0e0}.h-captcha[data-theme="dark"]+p.hcaptcha-invisible-disclosure,body.is-dark-theme .h-captcha[data-theme="auto"]+p.hcaptcha-invisible-disclosure,html.wp-dark-mode-active .h-captcha[data-theme="auto"]+p.hcaptcha-invisible-disclosure,html.drdt-dark-mode .h-captcha[data-theme="auto"]+p.hcaptcha-invisible-disclosure{color:#f5f5f5;background-color:#333;border:1px solid #f5f5f5}.h-captcha[data-theme="dark"]+p.hcaptcha-invisible-disclosure a,body.is-dark-theme .h-captcha[data-theme="auto"]+p.hcaptcha-invisible-disclosure a,html.wp-dark-mode-active .h-captcha[data-theme="auto"]+p.hcaptcha-invisible-disclosure a,html.drdt-dark-mode .h-captcha[data-theme="auto"]+p.hcaptcha-invisible-disclosure a{color:#f5f5f5}@media (prefers-color-scheme:dark){.h-captcha[data-theme="auto"]+p.hcaptcha-invisible-disclosure{color:#f5f5f5;background-color:#333;border:1px solid #f5f5f5}.h-captcha[data-theme="auto"]+p.hcaptcha-invisible-disclosure a{color:#f5f5f5}}.h-captcha[data-theme="custom"]+p.hcaptcha-invisible-disclosure,.h-captcha[data-theme="custom"]+p.hcaptcha-invisible-disclosure a{color:initial;background-color:initial}
+</style>
 <meta name="tec-api-version" content="v1"><meta name="tec-api-origin" content="/"><link rel="alternate" href="/wp-json/tribe/events/v1/events/?tags=taxation">		<style type="text/css">
 			
 			button,
@@ -407,7 +446,7 @@ h1:where(.wp-block-heading).has-background,h2:where(.wp-block-heading).has-backg
 </li>
 <li id="menu-item-32" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-has-children menu-item-32"><a href="/">Basics</a>
 <ul class="sub-menu">
-	<li id="menu-item-194" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-194"><a href="/mmtbasics/">Introduction to MMT</a></li>
+	<li id="menu-item-194" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-194"><a href="/">Introduction to MMT</a></li>
 	<li id="menu-item-2375" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2375"><a href="/2020/10/24/modern-monetary-theory-mmt-white-paper-uk/">MMT White Paper for the UK</a></li>
 	<li id="menu-item-50" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-50"><a href="/faqs/">FAQs</a></li>
 </ul>
@@ -715,7 +754,34 @@ h1:where(.wp-block-heading).has-background,h2:where(.wp-block-heading).has-backg
 <aside id="secondary" class="widget-area" role="complementary">
 
 	
-	<section id="text-3" class="widget widget_text">			<div class="textwidget"><p>[smbtoolbar]</p>
+	<section id="text-3" class="widget widget_text">			<div class="textwidget">Follow us<ul class="sxc-follow-buttons"><li class="sxc-follow-button">
+                        <a href="https://www.facebook.com/GowerInitiative/" data-toggle="tooltip" title="Facebook" target="_blank">
+                            <img decoding="async" src="/wp-content/plugins/social-media-buttons-toolbar/inc/img/social-media-icons/facebook.png" alt="Facebook">
+                        </a>
+                    </li><li class="sxc-follow-button">
+                        <a href="https://twitter.com/GowerInitiative" data-toggle="tooltip" title="Twitter" target="_blank">
+                            <img decoding="async" src="/wp-content/plugins/social-media-buttons-toolbar/inc/img/social-media-icons/twitter.png" alt="Twitter">
+                        </a>
+                    </li><li class="sxc-follow-button">
+                        <a href="https://www.instagram.com/gowerinitiative/" data-toggle="tooltip" title="Instagram" target="_blank">
+                            <img decoding="async" src="/wp-content/plugins/social-media-buttons-toolbar/inc/img/social-media-icons/instagram.png" alt="Instagram">
+                        </a>
+                    </li><li class="sxc-follow-button">
+                        <a href="https://www.youtube.com/channel/UCDzqxjzx-megEvRa_bvqe0Q/playlists" data-toggle="tooltip" title="YouTube" target="_blank">
+                            <img decoding="async" src="/wp-content/plugins/social-media-buttons-toolbar/inc/img/social-media-icons/youtube.png" alt="YouTube">
+                        </a>
+                    </li><li class="sxc-follow-button">
+                        <a href="https://www.linkedin.com/company/gowerinitiative" data-toggle="tooltip" title="LinkedIn" target="_blank">
+                            <img decoding="async" src="/wp-content/plugins/social-media-buttons-toolbar/inc/img/social-media-icons/linkedin.png" alt="LinkedIn">
+                        </a>
+                    </li></ul><script type='text/javascript'>
+                    jQuery(document).ready(function($) {
+
+                        // Enable Bootstrap Tooltips
+                        $('[data-toggle="tooltip"]').tooltip();
+
+                    });
+               </script>
 </div>
 		</section><section id="text-4" class="widget widget_text"><h4 class="widget-title">Join our mailing list</h4>			<div class="textwidget"><p>If you would like GIMMS to let you know about news and events, please click to sign up <a href="/contact/mailing-list/"><strong><em>here</em></strong></a></p>
 </div>
@@ -726,12 +792,12 @@ h1:where(.wp-block-heading).has-background,h2:where(.wp-block-heading).has-backg
 				</label>
 				<input type="submit" class="search-submit" value="Search">
 			</form></section><div class="tribe-compatibility-container">
-	<div class="tribe-common tribe-events tribe-events-view tribe-events-view--widget-events-list tribe-events-widget" data-js="tribe-events-view" data-view-rest-url="/wp-json/tribe/views/v2/html" data-view-manage-url="1" data-view-breakpoint-pointer="89daf72f-7229-4e51-9d93-1b33a2d53a11">
+	<div class="tribe-common tribe-events tribe-events-view tribe-events-view--widget-events-list tribe-events-widget" data-js="tribe-events-view" data-view-rest-url="/wp-json/tribe/views/v2/html" data-view-manage-url="1" data-view-breakpoint-pointer="107a25be-7a3f-427a-a76e-4e39ef8f2c32">
 		<div class="tribe-events-widget-events-list">
 
 			
 			<script data-js="tribe-events-view-data" type="application/json">
-	{"slug":"widget-events-list","prev_url":"","next_url":"","view_class":"Tribe\\Events\\Views\\V2\\Views\\Widgets\\Widget_List_View","view_slug":"widget-events-list","view_label":"View","view":null,"should_manage_url":true,"id":null,"alias-slugs":null,"title":"taxation Archives - Page 7 of 10 - The Gower Initiative for Modern Money Studies","limit":"5","no_upcoming_events":false,"featured_events_only":false,"jsonld_enable":true,"tribe_is_list_widget":false,"admin_fields":{"title":{"label":"Title:","type":"text","parent_classes":"","classes":"","dependency":"","id":"widget-tribe-widget-events-list-3-title","name":"widget-tribe-widget-events-list[3][title]","options":[],"placeholder":"","value":null},"limit":{"label":"Show:","type":"number","default":5,"min":1,"max":10,"step":1,"parent_classes":"","classes":"","dependency":"","id":"widget-tribe-widget-events-list-3-limit","name":"widget-tribe-widget-events-list[3][limit]","options":[],"placeholder":"","value":null},"no_upcoming_events":{"label":"Hide this widget if there are no upcoming events.","type":"checkbox","parent_classes":"","classes":"","dependency":"","id":"widget-tribe-widget-events-list-3-no_upcoming_events","name":"widget-tribe-widget-events-list[3][no_upcoming_events]","options":[],"placeholder":"","value":null},"featured_events_only":{"label":"Limit to featured events only","type":"checkbox","parent_classes":"","classes":"","dependency":"","id":"widget-tribe-widget-events-list-3-featured_events_only","name":"widget-tribe-widget-events-list[3][featured_events_only]","options":[],"placeholder":"","value":null},"jsonld_enable":{"label":"Generate JSON-LD data","type":"checkbox","parent_classes":"","classes":"","dependency":"","id":"widget-tribe-widget-events-list-3-jsonld_enable","name":"widget-tribe-widget-events-list[3][jsonld_enable]","options":[],"placeholder":"","value":null}},"events":[],"url":"\/page\/7\/?post_type=tribe_events&eventDisplay=widget-events-list&tag=taxation","url_event_date":false,"bar":{"keyword":"","date":""},"today":"2026-10-20 00:00:00","now":"2026-10-20 16:32:46","home_url":"","rest_url":"\/wp-json\/tribe\/views\/v2\/html","rest_method":"GET","rest_nonce":"","today_url":"\/page\/7\/?post_type=tribe_events&eventDisplay=widget-events-list&tag=taxation","today_title":"Click to select today's date","today_label":"Today","prev_label":"","next_label":"","date_formats":{"compact":"Y-m-d","month_and_year_compact":"Y-m","month_and_year":"F Y","time_range_separator":" - ","date_time_separator":" @ "},"messages":{"notice":["There are no upcoming events."]},"start_of_week":"1","header_title":"taxation","header_title_element":"h1","content_title":"","show_content_title":false,"breadcrumbs":[],"backlink":false,"before_events":"","after_events":"\n<!--\nThis calendar is powered by The Events Calendar.\nhttp:\/\/evnt.is\/18wn\n-->\n","display_events_bar":false,"disable_event_search":false,"live_refresh":true,"ical":{"display_link":true,"link":{"url":"\/page\/7\/?post_type=tribe_events&eventDisplay=widget-events-list&tag=taxation&ical=1","text":"Export Events","title":"Use this to share calendar data with Google Calendar, Apple iCal and other compatible apps"}},"container_classes":["tribe-common","tribe-events","tribe-events-view","tribe-events-view--widget-events-list","tribe-events-widget"],"container_data":[],"is_past":false,"breakpoints":{"xsmall":500,"medium":768,"full":960},"breakpoint_pointer":"89daf72f-7229-4e51-9d93-1b33a2d53a11","is_initial_load":true,"public_views":{"list":{"view_class":"Tribe\\Events\\Views\\V2\\Views\\List_View","view_url":"\/events\/tag\/taxation\/page\/7\/","view_label":"List","aria_label":"Display Events in List View"},"month":{"view_class":"Tribe\\Events\\Views\\V2\\Views\\Month_View","view_url":"\/events\/tag\/taxation\/month\/","view_label":"Month","aria_label":"Display Events in Month View"},"day":{"view_class":"Tribe\\Events\\Views\\V2\\Views\\Day_View","view_url":"\/page\/7\/?post_type=tribe_events&eventDisplay=day&tag=taxation","view_label":"Day","aria_label":"Display Events in Day View"}},"show_latest_past":false,"past":false,"compatibility_classes":["tribe-compatibility-container"],"view_more_text":"View Calendar","view_more_title":"View more events.","view_more_link":"\/events\/","widget_title":"Upcoming Events","hide_if_no_upcoming_events":false,"display":[],"subscribe_links":{"gcal":{"label":"Google Calendar","single_label":"Add to Google Calendar","visible":true,"block_slug":"hasGoogleCalendar"},"ical":{"label":"iCalendar","single_label":"Add to iCalendar","visible":true,"block_slug":"hasiCal"},"outlook-365":{"label":"Outlook 365","single_label":"Outlook 365","visible":true,"block_slug":"hasOutlook365"},"outlook-live":{"label":"Outlook Live","single_label":"Outlook Live","visible":true,"block_slug":"hasOutlookLive"},"ics":{"label":"Export .ics file","single_label":"Export .ics file","visible":true,"block_slug":null},"outlook-ics":{"label":"Export Outlook .ics file","single_label":"Export Outlook .ics file","visible":true,"block_slug":null}},"_context":{"slug":"widget-events-list"}}</script>
+	{"slug":"widget-events-list","prev_url":"","next_url":"","view_class":"Tribe\\Events\\Views\\V2\\Views\\Widgets\\Widget_List_View","view_slug":"widget-events-list","view_label":"View","view":null,"should_manage_url":true,"id":null,"alias-slugs":null,"title":"taxation Archives - Page 7 of 10 - The Gower Initiative for Modern Money Studies","limit":"5","no_upcoming_events":false,"featured_events_only":false,"jsonld_enable":true,"tribe_is_list_widget":false,"admin_fields":{"title":{"label":"Title:","type":"text","parent_classes":"","classes":"","dependency":"","id":"widget-tribe-widget-events-list-3-title","name":"widget-tribe-widget-events-list[3][title]","options":[],"placeholder":"","value":null},"limit":{"label":"Show:","type":"number","default":5,"min":1,"max":10,"step":1,"parent_classes":"","classes":"","dependency":"","id":"widget-tribe-widget-events-list-3-limit","name":"widget-tribe-widget-events-list[3][limit]","options":[],"placeholder":"","value":null},"no_upcoming_events":{"label":"Hide this widget if there are no upcoming events.","type":"checkbox","parent_classes":"","classes":"","dependency":"","id":"widget-tribe-widget-events-list-3-no_upcoming_events","name":"widget-tribe-widget-events-list[3][no_upcoming_events]","options":[],"placeholder":"","value":null},"featured_events_only":{"label":"Limit to featured events only","type":"checkbox","parent_classes":"","classes":"","dependency":"","id":"widget-tribe-widget-events-list-3-featured_events_only","name":"widget-tribe-widget-events-list[3][featured_events_only]","options":[],"placeholder":"","value":null},"jsonld_enable":{"label":"Generate JSON-LD data","type":"checkbox","parent_classes":"","classes":"","dependency":"","id":"widget-tribe-widget-events-list-3-jsonld_enable","name":"widget-tribe-widget-events-list[3][jsonld_enable]","options":[],"placeholder":"","value":null}},"events":[],"url":"\/page\/7\/?post_type=tribe_events&eventDisplay=widget-events-list&tag=taxation","url_event_date":false,"bar":{"keyword":"","date":""},"today":"2026-10-20 00:00:00","now":"2026-10-20 21:43:29","home_url":"","rest_url":"\/wp-json\/tribe\/views\/v2\/html","rest_method":"GET","rest_nonce":"","today_url":"\/page\/7\/?post_type=tribe_events&eventDisplay=widget-events-list&tag=taxation","today_title":"Click to select today's date","today_label":"Today","prev_label":"","next_label":"","date_formats":{"compact":"Y-m-d","month_and_year_compact":"Y-m","month_and_year":"F Y","time_range_separator":" - ","date_time_separator":" @ "},"messages":{"notice":["There are no upcoming events."]},"start_of_week":"1","header_title":"taxation","header_title_element":"h1","content_title":"","show_content_title":false,"breadcrumbs":[],"backlink":false,"before_events":"","after_events":"\n<!--\nThis calendar is powered by The Events Calendar.\nhttp:\/\/evnt.is\/18wn\n-->\n","display_events_bar":false,"disable_event_search":false,"live_refresh":true,"ical":{"display_link":true,"link":{"url":"\/page\/7\/?post_type=tribe_events&eventDisplay=widget-events-list&tag=taxation&ical=1","text":"Export Events","title":"Use this to share calendar data with Google Calendar, Apple iCal and other compatible apps"}},"container_classes":["tribe-common","tribe-events","tribe-events-view","tribe-events-view--widget-events-list","tribe-events-widget"],"container_data":[],"is_past":false,"breakpoints":{"xsmall":500,"medium":768,"full":960},"breakpoint_pointer":"107a25be-7a3f-427a-a76e-4e39ef8f2c32","is_initial_load":true,"public_views":{"list":{"view_class":"Tribe\\Events\\Views\\V2\\Views\\List_View","view_url":"\/events\/tag\/taxation\/page\/7\/","view_label":"List","aria_label":"Display Events in List View"},"month":{"view_class":"Tribe\\Events\\Views\\V2\\Views\\Month_View","view_url":"\/events\/tag\/taxation\/month\/","view_label":"Month","aria_label":"Display Events in Month View"},"day":{"view_class":"Tribe\\Events\\Views\\V2\\Views\\Day_View","view_url":"\/page\/7\/?post_type=tribe_events&eventDisplay=day&tag=taxation","view_label":"Day","aria_label":"Display Events in Day View"}},"show_latest_past":false,"past":false,"compatibility_classes":["tribe-compatibility-container"],"view_more_text":"View Calendar","view_more_title":"View more events.","view_more_link":"\/events\/","widget_title":"Upcoming Events","hide_if_no_upcoming_events":false,"display":[],"subscribe_links":{"gcal":{"label":"Google Calendar","single_label":"Add to Google Calendar","visible":true,"block_slug":"hasGoogleCalendar"},"ical":{"label":"iCalendar","single_label":"Add to iCalendar","visible":true,"block_slug":"hasiCal"},"outlook-365":{"label":"Outlook 365","single_label":"Outlook 365","visible":true,"block_slug":"hasOutlook365"},"outlook-live":{"label":"Outlook Live","single_label":"Outlook Live","visible":true,"block_slug":"hasOutlookLive"},"ics":{"label":"Export .ics file","single_label":"Export .ics file","visible":true,"block_slug":null},"outlook-ics":{"label":"Export Outlook .ics file","single_label":"Export Outlook .ics file","visible":true,"block_slug":null}},"_context":{"slug":"widget-events-list"}}</script>
 
 							<header class="tribe-events-widget-events-list__header">
 					<h2 class="tribe-events-widget-events-list__header-title tribe-common-h6 tribe-common-h--alt">
@@ -790,7 +856,7 @@ h1:where(.wp-block-heading).has-background,h2:where(.wp-block-heading).has-backg
 				return;
 			}
 
-			var container = document.querySelectorAll( '[data-view-breakpoint-pointer="89daf72f-7229-4e51-9d93-1b33a2d53a11"]' );
+			var container = document.querySelectorAll( '[data-view-breakpoint-pointer="107a25be-7a3f-427a-a76e-4e39ef8f2c32"]' );
 			if ( ! container ) {
 				return;
 			}
@@ -890,7 +956,278 @@ h1:where(.wp-block-heading).has-background,h2:where(.wp-block-heading).has-backg
             
 		</div><!-- .hitmag-grid-category-posts -->
 
-	</section><section id="block-6" class="widget widget_block"></section>
+	</section><section id="block-6" class="widget widget_block">
+<!-- Custom Twitter Feeds by Smash Balloon -->
+<div id="ctf" role="region" aria-label="Twitter Feed" class=" ctf ctf-type-usertimeline ctf-rebranded ctf-feed-1  ctf-styles ctf-list ctf-regular-style" data-ctfshortcode="{&quot;feed&quot;:1}" data-ctfdisablelinks="false" data-ctflinktextcolor="#" data-header-size="small" data-feedid="1" data-postid="1875" data-feed="1" data-ctfintents="1" data-ctfneeded="-14">
+        <div class="ctf-tweets" role="list">
+   		
+<div role="listitem" class="ctf-item ctf-author-gowerinitiative ctf-new ctf-hide-avatar ctf-retweet" id="2003764807657468335">
+
+		<div class="ctf-context">
+	    <a href="https://twitter.com/intent/user?screen_name=GowerInitiative" target="_blank" rel="nofollow noopener noreferrer" class="ctf-retweet-icon"><svg class="svg-inline--fa fa-w-16" viewbox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z"></path></svg><span class="ctf-screenreader">Retweet on Twitter</span></a>
+	    <a href="https://twitter.com/gowerinitiative" target="_blank" rel="nofollow noopener noreferrer" class="ctf-retweet-text">Gower Initiative for Modern Money Studies Retweeted</a>
+	</div>
+
+	<div class="ctf-author-box">
+		<div class="ctf-author-box-link">
+	        				
+									<h3 class="ctf-author-name-heading" style="display:inline;margin:0;padding:0;font:inherit;color:inherit;"><a href="https://twitter.com/sarahollando552" target="_blank" rel="noopener noreferrer" class="ctf-author-name">SHolland</a></h3>
+										<a href="https://twitter.com/sarahollando552" class="ctf-author-screenname" target="_blank" rel="noopener noreferrer">@sarahollando552</a>
+					<span class="ctf-screename-sep">·</span>
+					        
+							<div class="ctf-tweet-meta">
+					<a href="https://twitter.com/sarahollando552/status/2003764807657468335" class="ctf-tweet-date" target="_blank" rel="noopener noreferrer">24 Dec</a>
+				</div>
+					</div>
+	    			<div class="ctf-corner-logo">
+				<svg aria-hidden="true" focusable="false" width="30" height="30" viewbox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.1161 6.27344H24.2289L17.4284 14.0459L25.4286 24.6225H19.1645L14.2583 18.2079L8.6444 24.6225H5.52976L12.8035 16.309L5.12891 6.27344H11.552L15.9868 12.1367L21.1161 6.27344ZM20.0236 22.7594H21.7484L10.6148 8.03871H8.7639L20.0236 22.7594Z" fill="black"></path>
+			</svg>			</div>
+		
+	</div>
+	<div class="ctf-tweet-content">
+		                <p class="ctf-tweet-text">
+                                        True for the US<br>
+True for the U.K. <br>
+#MMT @wbmosler <br>
+@GowerInitiative                                                        </p>
+            	</div>
+
+		
+	<div class="ctf-tweet-actions">
+		
+		<a href="https://twitter.com/intent/tweet?in_reply_to=2003764807657468335&amp;related=sarahollando552" class="ctf-reply" target="_blank" rel="noopener noreferrer">
+			<svg class="svg-inline--fa fa-w-16" viewbox="0 0 24 24" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><g><path fill="currentColor" d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z"></path></g></svg>			<span class="ctf-screenreader">Reply on Twitter 2003764807657468335</span>
+		</a>
+
+		<a href="https://twitter.com/intent/retweet?tweet_id=2003764807657468335&amp;related=sarahollando552" class="ctf-retweet" target="_blank" rel="noopener noreferrer"><svg class="svg-inline--fa fa-w-16" viewbox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z"></path></svg>			<span class="ctf-screenreader">Retweet on Twitter 2003764807657468335</span>
+			<span class="ctf-action-count ctf-retweet-count">14</span>
+		</a>
+
+		<a href="https://twitter.com/intent/like?tweet_id=2003764807657468335&amp;related=sarahollando552" class="ctf-like" target="_blank" rel="nofollow noopener noreferrer">
+			<svg class="svg-inline--fa fa-w-16" viewbox="0 0 24 24" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><g><path fill="currentColor" d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z"></path></g></svg>			<span class="ctf-screenreader">Like on Twitter 2003764807657468335</span>
+			<span class="ctf-action-count ctf-favorite-count">24</span>
+		</a>
+		
+					<a href="https://twitter.com/sarahollando552/status/2003764807657468335" class="ctf-twitterlink" target="_blank" rel="nofollow noopener noreferrer">
+				<span>Twitter</span>
+				<span class="ctf-screenreader">2003764807657468335</span>
+			</a>
+			</div>
+</div>
+<div role="listitem" class="ctf-item ctf-author-gowerinitiative ctf-new ctf-hide-avatar ctf-retweet" id="2004629059410485525">
+
+		<div class="ctf-context">
+	    <a href="https://twitter.com/intent/user?screen_name=GowerInitiative" target="_blank" rel="nofollow noopener noreferrer" class="ctf-retweet-icon"><svg class="svg-inline--fa fa-w-16" viewbox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z"></path></svg><span class="ctf-screenreader">Retweet on Twitter</span></a>
+	    <a href="https://twitter.com/gowerinitiative" target="_blank" rel="nofollow noopener noreferrer" class="ctf-retweet-text">Gower Initiative for Modern Money Studies Retweeted</a>
+	</div>
+
+	<div class="ctf-author-box">
+		<div class="ctf-author-box-link">
+	        				
+									<h3 class="ctf-author-name-heading" style="display:inline;margin:0;padding:0;font:inherit;color:inherit;"><a href="https://twitter.com/widespreadhaze" target="_blank" rel="noopener noreferrer" class="ctf-author-name">Tally Sticks</a></h3>
+										<a href="https://twitter.com/widespreadhaze" class="ctf-author-screenname" target="_blank" rel="noopener noreferrer">@widespreadhaze</a>
+					<span class="ctf-screename-sep">·</span>
+					        
+							<div class="ctf-tweet-meta">
+					<a href="https://twitter.com/widespreadhaze/status/2004629059410485525" class="ctf-tweet-date" target="_blank" rel="noopener noreferrer">26 Dec</a>
+				</div>
+					</div>
+	    			<div class="ctf-corner-logo">
+				<svg aria-hidden="true" focusable="false" width="30" height="30" viewbox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.1161 6.27344H24.2289L17.4284 14.0459L25.4286 24.6225H19.1645L14.2583 18.2079L8.6444 24.6225H5.52976L12.8035 16.309L5.12891 6.27344H11.552L15.9868 12.1367L21.1161 6.27344ZM20.0236 22.7594H21.7484L10.6148 8.03871H8.7639L20.0236 22.7594Z" fill="black"></path>
+			</svg>			</div>
+		
+	</div>
+	<div class="ctf-tweet-content">
+		                <p class="ctf-tweet-text">
+                                        @grenville_1 @DanielJHannan First government does not spend by printing money. <br>
+<br>
+What makes us richer are the resources that are mobilised by both government and private spending. <br>
+<br>
+At the global level all financial liabilities and all financial assets offset each other, cancelling to zero. What remains are                                                        </p>
+            	</div>
+
+		
+	<div class="ctf-tweet-actions">
+		
+		<a href="https://twitter.com/intent/tweet?in_reply_to=2004629059410485525&amp;related=widespreadhaze" class="ctf-reply" target="_blank" rel="noopener noreferrer">
+			<svg class="svg-inline--fa fa-w-16" viewbox="0 0 24 24" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><g><path fill="currentColor" d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z"></path></g></svg>			<span class="ctf-screenreader">Reply on Twitter 2004629059410485525</span>
+		</a>
+
+		<a href="https://twitter.com/intent/retweet?tweet_id=2004629059410485525&amp;related=widespreadhaze" class="ctf-retweet" target="_blank" rel="noopener noreferrer"><svg class="svg-inline--fa fa-w-16" viewbox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z"></path></svg>			<span class="ctf-screenreader">Retweet on Twitter 2004629059410485525</span>
+			<span class="ctf-action-count ctf-retweet-count">8</span>
+		</a>
+
+		<a href="https://twitter.com/intent/like?tweet_id=2004629059410485525&amp;related=widespreadhaze" class="ctf-like" target="_blank" rel="nofollow noopener noreferrer">
+			<svg class="svg-inline--fa fa-w-16" viewbox="0 0 24 24" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><g><path fill="currentColor" d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z"></path></g></svg>			<span class="ctf-screenreader">Like on Twitter 2004629059410485525</span>
+			<span class="ctf-action-count ctf-favorite-count">26</span>
+		</a>
+		
+					<a href="https://twitter.com/widespreadhaze/status/2004629059410485525" class="ctf-twitterlink" target="_blank" rel="nofollow noopener noreferrer">
+				<span>Twitter</span>
+				<span class="ctf-screenreader">2004629059410485525</span>
+			</a>
+			</div>
+</div>
+<div role="listitem" class="ctf-item ctf-author-gowerinitiative ctf-new ctf-hide-avatar ctf-retweet" id="2004597787976257665">
+
+		<div class="ctf-context">
+	    <a href="https://twitter.com/intent/user?screen_name=GowerInitiative" target="_blank" rel="nofollow noopener noreferrer" class="ctf-retweet-icon"><svg class="svg-inline--fa fa-w-16" viewbox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z"></path></svg><span class="ctf-screenreader">Retweet on Twitter</span></a>
+	    <a href="https://twitter.com/gowerinitiative" target="_blank" rel="nofollow noopener noreferrer" class="ctf-retweet-text">Gower Initiative for Modern Money Studies Retweeted</a>
+	</div>
+
+	<div class="ctf-author-box">
+		<div class="ctf-author-box-link">
+	        				
+									<h3 class="ctf-author-name-heading" style="display:inline;margin:0;padding:0;font:inherit;color:inherit;"><a href="https://twitter.com/widespreadhaze" target="_blank" rel="noopener noreferrer" class="ctf-author-name">Tally Sticks</a></h3>
+										<a href="https://twitter.com/widespreadhaze" class="ctf-author-screenname" target="_blank" rel="noopener noreferrer">@widespreadhaze</a>
+					<span class="ctf-screename-sep">·</span>
+					        
+							<div class="ctf-tweet-meta">
+					<a href="https://twitter.com/widespreadhaze/status/2004597787976257665" class="ctf-tweet-date" target="_blank" rel="noopener noreferrer">26 Dec</a>
+				</div>
+					</div>
+	    			<div class="ctf-corner-logo">
+				<svg aria-hidden="true" focusable="false" width="30" height="30" viewbox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.1161 6.27344H24.2289L17.4284 14.0459L25.4286 24.6225H19.1645L14.2583 18.2079L8.6444 24.6225H5.52976L12.8035 16.309L5.12891 6.27344H11.552L15.9868 12.1367L21.1161 6.27344ZM20.0236 22.7594H21.7484L10.6148 8.03871H8.7639L20.0236 22.7594Z" fill="black"></path>
+			</svg>			</div>
+		
+	</div>
+	<div class="ctf-tweet-content">
+		                <p class="ctf-tweet-text">
+                                        @DanielJHannan Good question. The answer is simply that our ancestors ran a commodity based currency system: a silver standard. However, for centuries they utilised systems to bypass the silver constraint, such as ‘tallies of pro’. The ancient Exchequer of Receipt was in effect a clearing house                                                        </p>
+            	</div>
+
+		
+	<div class="ctf-tweet-actions">
+		
+		<a href="https://twitter.com/intent/tweet?in_reply_to=2004597787976257665&amp;related=widespreadhaze" class="ctf-reply" target="_blank" rel="noopener noreferrer">
+			<svg class="svg-inline--fa fa-w-16" viewbox="0 0 24 24" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><g><path fill="currentColor" d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z"></path></g></svg>			<span class="ctf-screenreader">Reply on Twitter 2004597787976257665</span>
+		</a>
+
+		<a href="https://twitter.com/intent/retweet?tweet_id=2004597787976257665&amp;related=widespreadhaze" class="ctf-retweet" target="_blank" rel="noopener noreferrer"><svg class="svg-inline--fa fa-w-16" viewbox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z"></path></svg>			<span class="ctf-screenreader">Retweet on Twitter 2004597787976257665</span>
+			<span class="ctf-action-count ctf-retweet-count">6</span>
+		</a>
+
+		<a href="https://twitter.com/intent/like?tweet_id=2004597787976257665&amp;related=widespreadhaze" class="ctf-like" target="_blank" rel="nofollow noopener noreferrer">
+			<svg class="svg-inline--fa fa-w-16" viewbox="0 0 24 24" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><g><path fill="currentColor" d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z"></path></g></svg>			<span class="ctf-screenreader">Like on Twitter 2004597787976257665</span>
+			<span class="ctf-action-count ctf-favorite-count">36</span>
+		</a>
+		
+					<a href="https://twitter.com/widespreadhaze/status/2004597787976257665" class="ctf-twitterlink" target="_blank" rel="nofollow noopener noreferrer">
+				<span>Twitter</span>
+				<span class="ctf-screenreader">2004597787976257665</span>
+			</a>
+			</div>
+</div>
+<div role="listitem" class="ctf-item ctf-author-gowerinitiative ctf-new ctf-hide-avatar ctf-retweet" id="2001575235376808124">
+
+		<div class="ctf-context">
+	    <a href="https://twitter.com/intent/user?screen_name=GowerInitiative" target="_blank" rel="nofollow noopener noreferrer" class="ctf-retweet-icon"><svg class="svg-inline--fa fa-w-16" viewbox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z"></path></svg><span class="ctf-screenreader">Retweet on Twitter</span></a>
+	    <a href="https://twitter.com/gowerinitiative" target="_blank" rel="nofollow noopener noreferrer" class="ctf-retweet-text">Gower Initiative for Modern Money Studies Retweeted</a>
+	</div>
+
+	<div class="ctf-author-box">
+		<div class="ctf-author-box-link">
+	        				
+									<h3 class="ctf-author-name-heading" style="display:inline;margin:0;padding:0;font:inherit;color:inherit;"><a href="https://twitter.com/widespreadhaze" target="_blank" rel="noopener noreferrer" class="ctf-author-name">Tally Sticks</a></h3>
+										<a href="https://twitter.com/widespreadhaze" class="ctf-author-screenname" target="_blank" rel="noopener noreferrer">@widespreadhaze</a>
+					<span class="ctf-screename-sep">·</span>
+					        
+							<div class="ctf-tweet-meta">
+					<a href="https://twitter.com/widespreadhaze/status/2001575235376808124" class="ctf-tweet-date" target="_blank" rel="noopener noreferrer">18 Dec</a>
+				</div>
+					</div>
+	    			<div class="ctf-corner-logo">
+				<svg aria-hidden="true" focusable="false" width="30" height="30" viewbox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.1161 6.27344H24.2289L17.4284 14.0459L25.4286 24.6225H19.1645L14.2583 18.2079L8.6444 24.6225H5.52976L12.8035 16.309L5.12891 6.27344H11.552L15.9868 12.1367L21.1161 6.27344ZM20.0236 22.7594H21.7484L10.6148 8.03871H8.7639L20.0236 22.7594Z" fill="black"></path>
+			</svg>			</div>
+		
+	</div>
+	<div class="ctf-tweet-content">
+		                <p class="ctf-tweet-text">
+                                        The money comes from MPs votes. It’s called ‘Money from Parliament’.<br>
+<br>
+You are an MP and should know this, it is your job after all.                                                        </p>
+            	</div>
+
+		
+	<div class="ctf-tweet-actions">
+		
+		<a href="https://twitter.com/intent/tweet?in_reply_to=2001575235376808124&amp;related=widespreadhaze" class="ctf-reply" target="_blank" rel="noopener noreferrer">
+			<svg class="svg-inline--fa fa-w-16" viewbox="0 0 24 24" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><g><path fill="currentColor" d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z"></path></g></svg>			<span class="ctf-screenreader">Reply on Twitter 2001575235376808124</span>
+		</a>
+
+		<a href="https://twitter.com/intent/retweet?tweet_id=2001575235376808124&amp;related=widespreadhaze" class="ctf-retweet" target="_blank" rel="noopener noreferrer"><svg class="svg-inline--fa fa-w-16" viewbox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z"></path></svg>			<span class="ctf-screenreader">Retweet on Twitter 2001575235376808124</span>
+			<span class="ctf-action-count ctf-retweet-count">6</span>
+		</a>
+
+		<a href="https://twitter.com/intent/like?tweet_id=2001575235376808124&amp;related=widespreadhaze" class="ctf-like" target="_blank" rel="nofollow noopener noreferrer">
+			<svg class="svg-inline--fa fa-w-16" viewbox="0 0 24 24" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><g><path fill="currentColor" d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z"></path></g></svg>			<span class="ctf-screenreader">Like on Twitter 2001575235376808124</span>
+			<span class="ctf-action-count ctf-favorite-count">18</span>
+		</a>
+		
+					<a href="https://twitter.com/widespreadhaze/status/2001575235376808124" class="ctf-twitterlink" target="_blank" rel="nofollow noopener noreferrer">
+				<span>Twitter</span>
+				<span class="ctf-screenreader">2001575235376808124</span>
+			</a>
+			</div>
+</div>
+<div role="listitem" class="ctf-item ctf-author-gowerinitiative ctf-new ctf-hide-avatar ctf-retweet" id="2001730060789666090">
+
+		<div class="ctf-context">
+	    <a href="https://twitter.com/intent/user?screen_name=GowerInitiative" target="_blank" rel="nofollow noopener noreferrer" class="ctf-retweet-icon"><svg class="svg-inline--fa fa-w-16" viewbox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z"></path></svg><span class="ctf-screenreader">Retweet on Twitter</span></a>
+	    <a href="https://twitter.com/gowerinitiative" target="_blank" rel="nofollow noopener noreferrer" class="ctf-retweet-text">Gower Initiative for Modern Money Studies Retweeted</a>
+	</div>
+
+	<div class="ctf-author-box">
+		<div class="ctf-author-box-link">
+	        				
+									<h3 class="ctf-author-name-heading" style="display:inline;margin:0;padding:0;font:inherit;color:inherit;"><a href="https://twitter.com/ptcherneva" target="_blank" rel="noopener noreferrer" class="ctf-author-name">Pavlina R Tcherneva</a></h3>
+										<a href="https://twitter.com/ptcherneva" class="ctf-author-screenname" target="_blank" rel="noopener noreferrer">@ptcherneva</a>
+					<span class="ctf-screename-sep">·</span>
+					        
+							<div class="ctf-tweet-meta">
+					<a href="https://twitter.com/ptcherneva/status/2001730060789666090" class="ctf-tweet-date" target="_blank" rel="noopener noreferrer">18 Dec</a>
+				</div>
+					</div>
+	    			<div class="ctf-corner-logo">
+				<svg aria-hidden="true" focusable="false" width="30" height="30" viewbox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.1161 6.27344H24.2289L17.4284 14.0459L25.4286 24.6225H19.1645L14.2583 18.2079L8.6444 24.6225H5.52976L12.8035 16.309L5.12891 6.27344H11.552L15.9868 12.1367L21.1161 6.27344ZM20.0236 22.7594H21.7484L10.6148 8.03871H8.7639L20.0236 22.7594Z" fill="black"></path>
+			</svg>			</div>
+		
+	</div>
+	<div class="ctf-tweet-content">
+		                <p class="ctf-tweet-text">
+                                        We call on the Indian government to recommit to MGNREGA &amp; its demand-driven access to employment from a human rights perspective. Join me, @JosephEStiglitz, @MazzucatoM, @Ferreras_Isa, @PikettyWIL, @srpoverty, @DarrickHamilton, @Jayati1609 and other experts by signing our letter.                                                        </p>
+            	</div>
+
+		
+	<div class="ctf-tweet-actions">
+		
+		<a href="https://twitter.com/intent/tweet?in_reply_to=2001730060789666090&amp;related=ptcherneva" class="ctf-reply" target="_blank" rel="noopener noreferrer">
+			<svg class="svg-inline--fa fa-w-16" viewbox="0 0 24 24" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><g><path fill="currentColor" d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z"></path></g></svg>			<span class="ctf-screenreader">Reply on Twitter 2001730060789666090</span>
+		</a>
+
+		<a href="https://twitter.com/intent/retweet?tweet_id=2001730060789666090&amp;related=ptcherneva" class="ctf-retweet" target="_blank" rel="noopener noreferrer"><svg class="svg-inline--fa fa-w-16" viewbox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z"></path></svg>			<span class="ctf-screenreader">Retweet on Twitter 2001730060789666090</span>
+			<span class="ctf-action-count ctf-retweet-count">20</span>
+		</a>
+
+		<a href="https://twitter.com/intent/like?tweet_id=2001730060789666090&amp;related=ptcherneva" class="ctf-like" target="_blank" rel="nofollow noopener noreferrer">
+			<svg class="svg-inline--fa fa-w-16" viewbox="0 0 24 24" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><g><path fill="currentColor" d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z"></path></g></svg>			<span class="ctf-screenreader">Like on Twitter 2001730060789666090</span>
+			<span class="ctf-action-count ctf-favorite-count">24</span>
+		</a>
+		
+					<a href="https://twitter.com/ptcherneva/status/2001730060789666090" class="ctf-twitterlink" target="_blank" rel="nofollow noopener noreferrer">
+				<span>Twitter</span>
+				<span class="ctf-screenreader">2001730060789666090</span>
+			</a>
+			</div>
+</div>    </div>
+    
+<div class="ctf-screenreader" aria-live="polite" aria-atomic="true" data-ctf-feed-status></div>
+
+    <button type="button" id="ctf-more" class="ctf-more"><span>Load More...</span></button>
+
+
+</div>
+</section>
 	
 </aside><!-- #secondary -->	</div><!-- .hm-container -->
 	</div><!-- #content -->
@@ -944,13 +1281,27 @@ h1:where(.wp-block-heading).has-background,h2:where(.wp-block-heading).has-backg
 			body.className = body.className.replace( /\btribe-no-js\b/, 'tribe-js' );
 		} )( document.body );
 		</script>
-		<script> /* <![CDATA[ */var tribe_l10n_datatables = {"aria":{"sort_ascending":": activate to sort column ascending","sort_descending":": activate to sort column descending"},"length_menu":"Show _MENU_ entries","empty_table":"No data available in table","info":"Showing _START_ to _END_ of _TOTAL_ entries","info_empty":"Showing 0 to 0 of 0 entries","info_filtered":"(filtered from _MAX_ total entries)","zero_records":"No matching records found","search":"Search:","all_selected_text":"All items on this page were selected. ","select_all_link":"Select all pages","clear_selection":"Clear Selection.","pagination":{"all":"All","next":"Next","previous":"Previous"},"select":{"rows":{"0":"","_":": Selected %d rows","1":": Selected 1 row"}},"datepicker":{"dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesMin":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Prev","currentText":"Today","closeText":"Done","today":"Today","clear":"Clear"}};/* ]]> */ </script><link rel="stylesheet" id="tec-variables-skeleton-css" href="/wp-content/plugins/the-events-calendar/common/build/css/variables-skeleton.css?ver=6.13.2" media="all">
+		<script> /* <![CDATA[ */var tribe_l10n_datatables = {"aria":{"sort_ascending":": activate to sort column ascending","sort_descending":": activate to sort column descending"},"length_menu":"Show _MENU_ entries","empty_table":"No data available in table","info":"Showing _START_ to _END_ of _TOTAL_ entries","info_empty":"Showing 0 to 0 of 0 entries","info_filtered":"(filtered from _MAX_ total entries)","zero_records":"No matching records found","search":"Search:","all_selected_text":"All items on this page were selected. ","select_all_link":"Select all pages","clear_selection":"Clear Selection.","pagination":{"all":"All","next":"Next","previous":"Previous"},"select":{"rows":{"0":"","_":": Selected %d rows","1":": Selected 1 row"}},"datepicker":{"dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesMin":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Prev","currentText":"Today","closeText":"Done","today":"Today","clear":"Clear"}};/* ]]> */ </script><style type="text/css" data-ctf-style="1">.ctf-feed-1.ctf-regular-style .ctf-item, .ctf-feed-1 .ctf-header{border-bottom:1px solid #ddd!important;}</style><script>
+var HCaptchaMainObject = {"params":"{\"sitekey\":\"10000000-ffff-ffff-ffff-000000000001\",\"theme\":\"light\",\"size\":\"normal\",\"hl\":\"en\"}"};
+</script>
+<link rel="stylesheet" id="tec-variables-skeleton-css" href="/wp-content/plugins/the-events-calendar/common/build/css/variables-skeleton.css?ver=6.13.2" media="all">
 <link rel="stylesheet" id="tribe-common-skeleton-style-css" href="/wp-content/plugins/the-events-calendar/common/build/css/common-skeleton.css?ver=6.13.2" media="all">
 <link rel="stylesheet" id="tribe-events-widgets-v2-events-list-skeleton-css" href="/wp-content/plugins/the-events-calendar/build/css/widget-events-list-skeleton.css?ver=6.18.2" media="all">
 <link rel="stylesheet" id="tec-variables-full-css" href="/wp-content/plugins/the-events-calendar/common/build/css/variables-full.css?ver=6.13.2" media="all">
 <link rel="stylesheet" id="tribe-common-full-style-css" href="/wp-content/plugins/the-events-calendar/common/build/css/common-full.css?ver=6.13.2" media="all">
 <link rel="stylesheet" id="tribe-events-widgets-v2-events-list-full-css" href="/wp-content/plugins/the-events-calendar/build/css/widget-events-list-full.css?ver=6.18.2" media="all">
 <script id="tec-user-agent-js" src="/wp-content/plugins/the-events-calendar/common/build/js/user-agent.js?ver=da75d0bdea6dde3898df"></script>
+<script id="ssb-blocks-front-js-js" src="/wp-content/plugins/simple-social-buttons/assets/js/frontend-blocks.js?ver=7.2.0"></script>
+<script id="ssb-front-js-js-extra">
+var SSB = {"ajax_url":"/wp-admin/admin-ajax.php","share_track_nonce":"03700347f5","share_trackable_networks":["twitter","pinterest","linkedin","reddit","whatsapp","viber","messenger","email","copylink","print","bluesky","telegram","threads","mastodon","vk","snapchat","fbshare"],"popup_features":"menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600","i18n":{"hide_bar":"Hide social sharing bar","show_bar":"Show social sharing bar"}};
+//# sourceURL=ssb-front-js-js-extra
+</script>
+<script id="ssb-front-js-js" src="/wp-content/plugins/simple-social-buttons/assets/js/front.min.js?ver=7.2.0"></script>
+<script id="wpedon-js-extra">
+var wpedon = {"ajaxUrl":"/wp-admin/admin-ajax.php","nonce":"dc109039be","opens":"2","cancel":"/category/blogs/","return":"/thank-you/"};
+//# sourceURL=wpedon-js-extra
+</script>
+<script id="wpedon-js" src="/wp-content/plugins/easy-paypal-donation/assets/js/wpedon.js?ver=1.5.7"></script>
 <script id="linkprefetcher-js-before">
 window.LP_CONFIG = {"activeOnDesktop":true,"behavior":"mouseHover","hoverDelay":60,"instantClick":false,"activeOnMobile":true,"mobileBehavior":"viewport","ignoreKeywords":"#,?","isMobile":false}
 //# sourceURL=linkprefetcher-js-before
@@ -967,6 +1318,11 @@ window.LP_CONFIG = {"activeOnDesktop":true,"behavior":"mouseHover","hoverDelay":
 <script id="wp-hooks-js" src="/wp-includes/js/dist/hooks.min.js?ver=f0f188028580e8dc1255"></script>
 <script defer id="tribe-events-views-v2-manager-js" src="/wp-content/plugins/the-events-calendar/build/js/views/manager.js?ver=76866c0f9c1f9f397a02"></script>
 <script id="tribe-events-views-v2-breakpoints-js" src="/wp-content/plugins/the-events-calendar/build/js/views/breakpoints.js?ver=4208de2df2852e0b91ec"></script>
+<script id="ctf_scripts-js-extra">
+var ctf = {"ajax_url":"/wp-admin/admin-ajax.php","i18n":{"newTweetsLoaded":"%s new tweets loaded","noMoreTweets":"That's all! No more Tweets to load"}};
+//# sourceURL=ctf_scripts-js-extra
+</script>
+<script id="ctf_scripts-js" src="/wp-content/plugins/custom-twitter-feeds/js/ctf-scripts.min.js?ver=2.10.0#038;ver=2.10.0"></script>
 <script id="wp-emoji-settings" type="application/json">
 {"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"/wp-includes/js/wp-emoji-release.min.js?ver=7.1.3"}}
 </script>
