@@ -2,23 +2,130 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>/</loc>
-		<lastmod>2023-01-21T15:52:30+00:00</lastmod>
-	</url>
-	<url>
-		<loc>/faqs/</loc>
-		<lastmod>2018-11-22T11:47:44+00:00</lastmod>
-	</url>
-	<url>
-		<loc>/mailing-list/</loc>
-		<lastmod>2018-12-29T17:40:17+00:00</lastmod>
+		<lastmod>2026-10-22T09:20:48+00:00</lastmod>
 	</url>
 	<url>
 		<loc>/blogs/</loc>
-		<lastmod>2019-01-19T16:15:23+00:00</lastmod>
+		<lastmod>2026-10-22T09:11:02+00:00</lastmod>
+	</url>
+	<url>
+		<loc>/contact/</loc>
+		<lastmod>2026-10-22T09:11:03+00:00</lastmod>
+	</url>
+	<url>
+		<loc>/fact-sheets/a-brief-history-of-money/</loc>
+		<lastmod>2026-10-22T09:11:04+00:00</lastmod>
+	</url>
+	<url>
+		<loc>/fact-sheets/</loc>
+		<lastmod>2026-10-22T09:11:04+00:00</lastmod>
+	</url>
+	<url>
+		<loc>/fact-sheets/gilts-and-bonds/</loc>
+		<lastmod>2026-10-22T09:11:11+00:00</lastmod>
+	</url>
+	<url>
+		<loc>/fact-sheets/inflation/</loc>
+		<lastmod>2026-10-22T09:16:43+00:00</lastmod>
+	</url>
+	<url>
+		<loc>/fact-sheets/macroeconomics/</loc>
+		<lastmod>2026-10-22T09:16:47+00:00</lastmod>
+	</url>
+	<url>
+		<loc>/fact-sheets/mmt-and-public-policy/</loc>
+		<lastmod>2026-10-22T09:16:57+00:00</lastmod>
+	</url>
+	<url>
+		<loc>/fact-sheets/negative-interest-rates/</loc>
+		<lastmod>2026-10-22T09:17:03+00:00</lastmod>
+	</url>
+	<url>
+		<loc>/fact-sheets/origins-of-mmt/</loc>
+		<lastmod>2026-10-22T09:17:08+00:00</lastmod>
+	</url>
+	<url>
+		<loc>/fact-sheets/quantitative-easing/</loc>
+		<lastmod>2026-10-22T09:17:16+00:00</lastmod>
+		<image:image>
+			<image:loc>/wp-content/uploads/2020/11/The-Implementation-of-QE-image.png</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>/fact-sheets/sectoral-balances/</loc>
+		<lastmod>2026-10-22T09:19:22+00:00</lastmod>
+		<image:image>
+			<image:loc>/wp-content/uploads/2018/10/UK-Sectoral-Balances-by-Neil-Wilson-1.png</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>/fact-sheets/the-bank-of-england/</loc>
+		<lastmod>2026-10-22T09:19:23+00:00</lastmod>
+	</url>
+	<url>
+		<loc>/fact-sheets/green-new-deal/</loc>
+		<lastmod>2026-10-22T09:19:30+00:00</lastmod>
+	</url>
+	<url>
+		<loc>/fact-sheets/universal-basic-income/</loc>
+		<lastmod>2026-10-22T09:19:50+00:00</lastmod>
+	</url>
+	<url>
+		<loc>/faqs/</loc>
+		<lastmod>2026-10-22T09:19:52+00:00</lastmod>
+	</url>
+	<url>
+		<loc>/job-guarantee/</loc>
+		<lastmod>2026-10-22T09:20:41+00:00</lastmod>
+	</url>
+	<url>
+		<loc>/mailing-list/</loc>
+		<lastmod>2026-10-22T09:20:47+00:00</lastmod>
+	</url>
+	<url>
+		<loc>/objectives/</loc>
+		<lastmod>2026-10-22T09:20:58+00:00</lastmod>
+	</url>
+	<url>
+		<loc>/objectives/acknowledgements/</loc>
+		<lastmod>2026-10-22T09:20:59+00:00</lastmod>
+		<image:image>
+			<image:loc>/wp-content/uploads/2018/09/Bill-Mitchell.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>/wp-content/uploads/2018/09/stephanie.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>/wp-content/uploads/2018/10/fadhel.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>/wp-content/uploads/2018/09/steven-hail.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>/wp-content/uploads/2018/10/Rohan-Grey.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>/wp-content/uploads/2018/09/image001.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>/wp-content/uploads/2018/09/Patricia-Pino-Portrait.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>/tools-and-resources/</loc>
+		<lastmod>2026-10-22T09:21:00+00:00</lastmod>
+	</url>
+	<url>
+		<loc>/donate/</loc>
+		<lastmod>2026-10-22T09:24:21+00:00</lastmod>
+	</url>
+	<url>
+		<loc>/thank-you/</loc>
+		<lastmod>2026-10-22T09:24:23+00:00</lastmod>
 	</url>
 	<url>
 		<loc>/about/advisory-board/</loc>
-		<lastmod>2019-02-17T17:42:08+00:00</lastmod>
+		<lastmod>2026-10-22T09:24:53+00:00</lastmod>
 		<image:image>
 			<image:loc>/wp-content/uploads/2018/09/Bill-Mitchell.jpg</image:loc>
 		</image:image>
@@ -54,107 +161,8 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>/fact-sheets/inflation/</loc>
-		<lastmod>2019-03-05T15:49:56+00:00</lastmod>
-	</url>
-	<url>
-		<loc>/fact-sheets/macroeconomics/</loc>
-		<lastmod>2019-03-05T15:50:13+00:00</lastmod>
-	</url>
-	<url>
-		<loc>/fact-sheets/mmt-and-public-policy/</loc>
-		<lastmod>2019-03-05T15:50:24+00:00</lastmod>
-	</url>
-	<url>
-		<loc>/fact-sheets/sectoral-balances/</loc>
-		<lastmod>2019-03-05T15:50:47+00:00</lastmod>
-		<image:image>
-			<image:loc>/wp-content/uploads/2018/10/UK-Sectoral-Balances-by-Neil-Wilson-1.png</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc>/fact-sheets/the-bank-of-england/</loc>
-		<lastmod>2019-03-05T15:50:55+00:00</lastmod>
-	</url>
-	<url>
-		<loc>/thank-you/</loc>
-		<lastmod>2019-12-28T17:04:15+00:00</lastmod>
-	</url>
-	<url>
-		<loc>/donate/</loc>
-		<lastmod>2019-12-29T14:39:36+00:00</lastmod>
-	</url>
-	<url>
-		<loc>/fact-sheets/green-new-deal/</loc>
-		<lastmod>2020-01-05T18:31:47+00:00</lastmod>
-	</url>
-	<url>
-		<loc>/fact-sheets/a-brief-history-of-money/</loc>
-		<lastmod>2020-04-03T20:30:46+00:00</lastmod>
-	</url>
-	<url>
-		<loc>/privacy-policy/</loc>
-		<lastmod>2020-05-14T19:37:21+00:00</lastmod>
-	</url>
-	<url>
-		<loc>/objectives/</loc>
-		<lastmod>2020-05-23T19:50:07+00:00</lastmod>
-	</url>
-	<url>
-		<loc>/fact-sheets/universal-basic-income/</loc>
-		<lastmod>2020-07-19T20:05:58+00:00</lastmod>
-	</url>
-	<url>
-		<loc>/fact-sheets/quantitative-easing/</loc>
-		<lastmod>2020-11-06T20:19:54+00:00</lastmod>
-		<image:image>
-			<image:loc>/wp-content/uploads/2020/11/The-Implementation-of-QE-image.png</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc>/fact-sheets/</loc>
-		<lastmod>2020-11-14T19:45:18+00:00</lastmod>
-	</url>
-	<url>
-		<loc>/fact-sheets/negative-interest-rates/</loc>
-		<lastmod>2020-11-14T20:21:40+00:00</lastmod>
-	</url>
-	<url>
-		<loc>/objectives/acknowledgements/</loc>
-		<lastmod>2020-12-06T15:47:20+00:00</lastmod>
-		<image:image>
-			<image:loc>/wp-content/uploads/2018/09/Bill-Mitchell.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>/wp-content/uploads/2018/09/stephanie.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>/wp-content/uploads/2018/10/fadhel.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>/wp-content/uploads/2018/09/steven-hail.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>/wp-content/uploads/2018/10/Rohan-Grey.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>/wp-content/uploads/2018/09/image001.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>/wp-content/uploads/2018/09/Patricia-Pino-Portrait.jpg</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc>/fact-sheets/gilts-and-bonds/</loc>
-		<lastmod>2022-03-20T17:59:41+00:00</lastmod>
-	</url>
-	<url>
-		<loc>/contact/</loc>
-		<lastmod>2022-05-06T20:03:47+00:00</lastmod>
-	</url>
-	<url>
 		<loc>/about/gimms-associates/</loc>
-		<lastmod>2023-07-09T19:34:19+00:00</lastmod>
+		<lastmod>2026-10-22T09:24:54+00:00</lastmod>
 		<image:image>
 			<image:loc>/wp-content/uploads/2019/09/Philip-Armstrong.png</image:loc>
 		</image:image>
@@ -178,20 +186,12 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>/fact-sheets/origins-of-mmt/</loc>
-		<lastmod>2024-07-07T18:23:37+00:00</lastmod>
-	</url>
-	<url>
-		<loc>/job-guarantee/</loc>
-		<lastmod>2025-09-14T05:28:27+00:00</lastmod>
-	</url>
-	<url>
 		<loc>/about/navigation/</loc>
-		<lastmod>2025-09-14T15:57:12+00:00</lastmod>
+		<lastmod>2026-10-22T09:24:55+00:00</lastmod>
 	</url>
 	<url>
 		<loc>/about/</loc>
-		<lastmod>2026-01-05T21:15:41+00:00</lastmod>
+		<lastmod>2026-10-22T09:25:46+00:00</lastmod>
 		<image:image>
 			<image:loc>/wp-content/uploads/2018/09/14089017_10210446555783044_1168914042314616215_n.jpg</image:loc>
 		</image:image>
@@ -200,8 +200,8 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>/tools-and-resources/</loc>
-		<lastmod>2026-04-05T12:14:52+00:00</lastmod>
+		<loc>/privacy-policy/</loc>
+		<lastmod>2026-10-22T09:28:39+00:00</lastmod>
 	</url>
 </urlset>
 <!-- XML Sitemap generated by Yoast SEO -->
